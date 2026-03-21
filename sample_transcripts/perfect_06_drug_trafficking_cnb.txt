@@ -1,0 +1,123 @@
+HIGH COURT OF SINGAPORE
+CRIMINAL CASE NO. HC/CC 15/2025
+
+PUBLIC PROSECUTOR v SIVA KUMAR s/o NARAYANAN
+
+Date of Hearing: 25 March 2025
+Coram: Justice Hoo Sheau Peng
+Counsel for Prosecution: Senior Deputy Public Prosecutor Ms. Janice Ng Hui Lin
+Counsel for Defence: Mr. Dhillon s/o Balwant Singh SC
+
+CASE SUMMARY:
+The accused faces a capital charge under s.5(1)(a) read with s.33(1) of the
+Misuse of Drugs Act (Cap 185) for trafficking in not less than 33.44 grams
+of diamorphine, which carries the mandatory death penalty unless the conditions
+for the alternative sentencing regime are met. The accused claims he did not
+know the plastic bag he collected contained diamorphine. This is Day 2 of trial.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Assistant
+Superintendent Tan Wei Loong, CNB, officer in charge of the operation)
+
+SDPP NG: ASP Tan, can you describe the operation on 22 September 2024?
+PW1: On 22 September 2024, I led a team of 16 CNB officers in a
+pre-planned operation based on intelligence received over the preceding
+two weeks. At 3:42pm we placed the accused under surveillance from
+the moment he arrived at Woodlands Checkpoint by bus from Malaysia.
+We followed him as he took the MRT to Yishun Station, then walked
+to Block 221, Yishun Avenue 9. He entered the ground-floor carpark
+and retrieved a yellow plastic bag from behind a drain cover at lot 14.
+At that point we arrested him. The bag was opened in his presence and
+found to contain five bundles wrapped in newspaper.
+
+SDPP NG: What were the bundles tested to contain?
+PW1: The five bundles were submitted to HSA. They were confirmed to
+contain not less than 33.44 grams of diamorphine in total.
+
+SDPP NG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. DHILLON SC: ASP Tan, did the accused resist arrest or attempt to flee?
+PW1: No. He complied immediately.
+
+MR. DHILLON SC: He did not throw the bag away when he saw you?
+PW1: No. He was holding the bag when we approached.
+
+MR. DHILLON SC: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Dr. Lim Hui
+Qing, Senior Analyst, Illicit Drugs Laboratory, Health Sciences Authority)
+
+SDPP NG: Dr. Lim, you tested the contents of the five bundles?
+PW2: Yes. Each bundle was individually opened and tested. I confirm
+the findings as stated in my certificate of analysis, Exhibit P4:
+Bundle 1 — 6.22 grams diamorphine; Bundle 2 — 7.04 grams; Bundle 3 —
+6.89 grams; Bundle 4 — 6.55 grams; Bundle 5 — 6.74 grams. Total
+diamorphine content: 33.44 grams. The threshold for the capital charge
+under the MDA is 15 grams. The drugs in this case exceed that threshold
+by more than double.
+
+SDPP NG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. DHILLON SC: Dr. Lim, was each bundle individually weighed and tested?
+PW2: Yes.
+
+MR. DHILLON SC: The testing protocol and chain of custody — were these
+followed for all five bundles?
+PW2: Yes. The HSA's ISO-accredited protocol was followed. Chain of
+custody is documented in Exhibit P4A.
+
+MR. DHILLON SC: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW3 (Third Prosecution Witness — Corporal Ahmad
+Faris bin Zulkifli, arresting officer)
+
+SDPP NG: Corporal Faris, what did the accused say when arrested?
+PW3: He was read his rights in English and Tamil. He was asked in Tamil:
+"What is in the bag?" He said in Tamil — and this was recorded in my
+field notes and confirmed by the Tamil interpreter: "I don't know. A
+friend asked me to collect and deliver it."
+
+SDPP NG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW3
+
+MR. DHILLON SC: Corporal Faris, the accused said "a friend asked me to
+collect and deliver it." Did he name the friend?
+PW3: He said he did not know the friend's name. He referred to him as
+"Ah Boy."
+
+MR. DHILLON SC: Was that the full extent of his statement at arrest?
+PW3: In the field, yes. A full cautioned statement was subsequently
+recorded at CNB headquarters.
+
+MR. DHILLON SC: No further questions.
+
+COURT: The prosecution evidence in this case is consistent across all
+three witnesses and corroborated by objective evidence:
+- PW1 (arresting officer): Clear, detailed operational account;
+  accused found in possession of the bag.
+- PW2 (HSA analyst): Confirmed drug identity and weight through
+  ISO-accredited procedure; chain of custody documented.
+- PW3 (corporal): Accused's own words at arrest establish he knew
+  he was collecting and delivering a consignment.
+- No material inconsistencies are identified across the prosecution case.
+The sole remaining issues are: (1) the accused's claimed lack of
+knowledge of the drug type (which the presumption under s.18 MDA
+addresses); and (2) eligibility for the alternative sentencing regime.
+
+[HEARING TO CONTINUE WITH THE ACCUSED'S TESTIMONY]

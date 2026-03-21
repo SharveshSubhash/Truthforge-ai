@@ -1,0 +1,225 @@
+HIGH COURT OF SINGAPORE
+CRIMINAL CASE NO. HC/CC 3/2025
+
+PUBLIC PROSECUTOR v SHAUN TAN WEI MING
+
+Date of Hearing: 10 February 2025 (Day 4 of trial)
+Coram: Justice Hoo Sheau Peng
+Counsel for Prosecution: Senior Deputy Public Prosecutor Mr. Desmond Lam Keng Yeow
+and DPP Ms. Clara Sng Hui Ying
+Counsel for Defence: Mr. Peter Cuthbert Low SC and Ms. Rachel Ng Xin Yi
+
+CASE SUMMARY:
+The accused faces a charge under s.300(c) of the Penal Code — murder —
+specifically that on 7 September 2024 between 11:30pm and 1:00am, at
+Unit #08-22 of Rivervale Crescent Condominium, Sengkang, he caused
+the death of Mr. Kenneth Chia Zhi Hao by inflicting multiple stab wounds.
+The accused and the deceased were former business partners. This is Day 4
+of trial. The hearing today covers the testimony of three witnesses.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW4 (Fourth Prosecution Witness — Ms. Amanda Lee
+Shu Yi, resident of #08-20, Rivervale Crescent Condominium, direct
+neighbour of the deceased)
+
+SDPP LAM: Ms. Amanda, did you hear anything unusual on the night of
+7 September 2024?
+PW4: Yes. I heard very loud banging sounds — like something heavy hitting
+the floor. I also heard shouting. Two male voices. The noise came
+clearly through the shared wall between my unit and #08-22. I know
+Kenneth — we've been neighbours for three years. One of the voices
+sounded like his. The other voice I did not recognise.
+
+SDPP LAM: What time did you hear this?
+PW4: It was around midnight. I had gone to bed at 11:45pm but I hadn't
+fallen asleep. The noise woke me up properly, so it was maybe 12:05am
+to 12:15am. I remember looking at my bedside clock after the noise
+started.
+
+SDPP LAM: How long did the noise continue?
+PW4: Maybe 10 to 15 minutes. Then it went quiet.
+
+SDPP LAM: Did you call the police?
+PW4: Not immediately. I listened for a while. When it went completely
+quiet I thought maybe it was over. I went back to sleep. I only
+found out the next morning when police were at the door.
+
+SDPP LAM: Did you hear the front door of #08-22 open or close at any
+point?
+PW4: I heard a door — I assumed it was the front door — slam once.
+That was shortly after the noise stopped. Maybe 12:20am.
+
+SDPP LAM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW4
+
+MR. LOW SC: Ms. Amanda, you said you looked at your bedside clock.
+What type of clock is it?
+PW4: A digital alarm clock. Red numbers.
+
+MR. LOW SC: And you saw the noise started at 12:05 to 12:15am?
+PW4: Approximately. I remember the clock showed something like 12:07
+or 12:08. Around there.
+
+MR. LOW SC: You also heard a door slam at around 12:20am. That is
+approximately 5 to 15 minutes after the noise stopped?
+PW4: Yes. The noise stopped and then a bit later I heard the door.
+
+MR. LOW SC: Could the door slam have been from another unit on the
+same floor? The eighth floor has eight units.
+PW4: It came from the direction of #08-22. But I can't be completely
+certain it wasn't another unit.
+
+MR. LOW SC: You did not call the police. Does that mean you did not
+consider the situation an emergency?
+PW4: I thought it was a domestic argument. Arguments do happen.
+I didn't realise what had actually happened.
+
+MR. LOW SC: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW5 (Fifth Prosecution Witness — Mr. David Ong
+Bak Chuan, Security Guard, Rivervale Crescent Condominium, on duty
+at the guardhouse from 11pm to 7am on 7–8 September 2024)
+
+SDPP LAM: Mr. David, what is your post and what are your duties?
+PW5: I'm a security officer. On that night I was stationed at the main
+vehicle gate. I also monitor the CCTV console which covers the main
+lobby, carpark, and the access corridor on each floor.
+
+SDPP LAM: Did you observe the accused, Mr. Shaun Tan, entering the
+condominium on the night of 7 September 2024?
+PW5: Yes. He came in through the main pedestrian gate at 11:34pm.
+I remember because he stopped to ask me which floor Kenneth Chia
+lived on. I checked the resident directory and told him — Block 8,
+eighth floor. I noted it in my logbook.
+
+SDPP LAM: Did you see him leave?
+PW5: Yes. He came back down to the main lobby at 12:28am. He was
+walking quickly. He had changed his shirt. When he came in, he was
+wearing a dark blue collared shirt. When he left, he was in a plain
+grey T-shirt. He left through the pedestrian gate.
+
+SDPP LAM: Are you certain about the shirt change?
+PW5: I am certain. I commented to myself because I thought it unusual.
+
+SDPP LAM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW5
+
+MR. LOW SC: Mr. David, you said the accused asked you which floor
+Kenneth lived on at 11:34pm. Is that in your logbook?
+PW5: Yes. Exhibit P12 is a copy of my logbook entry.
+
+MR. LOW SC: Your logbook entry reads: "11:34pm — male visitor to Blk 8,
+asked for resident name: Chia. Directed to 8th floor." It does not
+record the visitor's name or description. How do you know this was
+Mr. Shaun Tan?
+PW5: I recognised him because his photo was shown to me when police
+came the next morning. I connected him to the visitor I had seen.
+
+MR. LOW SC: So you identified him from a police photograph the next
+morning — not contemporaneously?
+PW5: Yes, but I had a clear look at him for several minutes. He was
+at my counter.
+
+MR. LOW SC: The CCTV at the main lobby — was it working that night?
+PW5: The camera at the main lobby was operational. The floor cameras
+were working as well.
+
+MR. LOW SC: Is the lobby camera footage in evidence?
+SDPP LAM: Yes, Your Honour. Exhibit P13 — the lobby camera shows a
+male individual entering at 11:34pm and leaving at 12:28am. The
+image quality is sufficient to see the shirt colour change. The
+prosecution will address this in closing.
+
+MR. LOW SC: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW6 (Sixth Prosecution Witness — Dr. Valerie Tan
+Hui Ling, Forensic Pathologist, Health Sciences Authority)
+
+SDPP LAM: Dr. Valerie, you conducted the post-mortem on the deceased,
+Mr. Kenneth Chia Zhi Hao. What were your findings?
+PW6: The deceased sustained nine stab wounds. Three were to the chest,
+four to the abdomen, and two to the upper back. The fatal wound was
+a penetrating wound to the left ventricle of the heart — a stab wound
+approximately 11 centimetres in depth. Death was caused by exsanguination
+— blood loss — resulting from this wound. The wounds are consistent
+with a single-edged blade approximately 2 to 2.5 centimetres wide.
+
+SDPP LAM: What was the estimated time of death?
+PW6: Based on body temperature, rigor mortis, and lividity, I estimate
+death occurred between 11:45pm on 7 September and 1:15am on
+8 September 2024. I cannot narrow it further without additional context.
+
+SDPP LAM: Were there any defensive injuries?
+PW6: Yes. There were six lacerations to the palms and fingers of both
+hands — classic defensive wounds consistent with the deceased attempting
+to grab or block a blade.
+
+SDPP LAM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW6
+
+MR. LOW SC: Dr. Valerie, your time of death estimate is a 90-minute
+window: 11:45pm to 1:15am. Is it correct that death could have
+occurred as early as 11:45pm?
+PW6: Yes, the lower bound of my estimate is 11:45pm.
+
+MR. LOW SC: The accused entered the condominium at 11:34pm. If death
+occurred at 11:45pm, that is only 11 minutes after arrival. Is it
+plausible that a fatal altercation with nine stab wounds and significant
+defensive struggle could occur and conclude within 11 minutes?
+PW6: It is within the realm of possibility. Violent altercations can
+be brief and intense.
+
+MR. LOW SC: Or death could have occurred at 1:15am — 47 minutes after
+the accused left at 12:28am?
+PW6: Theoretically, yes. The physiology is consistent with both.
+
+MR. LOW SC: Your estimate does not exclude the possibility that the
+deceased was alive when the accused left the condominium?
+PW6: I cannot exclude that possibility based on the pathology alone.
+
+MR. LOW SC: No further questions.
+
+---
+
+SDPP LAM: Re-examination of PW6.
+SDPP LAM: Dr. Valerie, the blood loss from a wound to the left
+ventricle — in your opinion, how rapidly would incapacitation and
+death follow?
+PW6: A penetrating wound to the left ventricle is rapidly fatal without
+immediate medical intervention. Loss of consciousness would typically
+occur within 2 to 5 minutes of the wound being inflicted. Death would
+follow within 5 to 15 minutes without surgical intervention. It is very
+unlikely that a person with this wound could survive for 47 additional
+minutes without intervention.
+
+SDPP LAM: No further questions.
+
+COURT: The following observations are recorded for the trial record.
+
+CONSISTENT FACTS:
+- The accused entered Rivervale Crescent Condominium at 11:34pm on 7 September 2024 (PW5 logbook, CCTV Exhibit P13)
+- Disturbance sounds were heard from #08-22 at approximately 12:07–12:08am (PW4)
+- The accused departed the condominium at 12:28am (PW5, CCTV)
+- The accused had changed his shirt between entry and exit (PW5)
+
+INCONSISTENCY REQUIRING RESOLUTION:
+- PW4 heard the noise begin at 12:07–12:08am, approximately 33–34 minutes after the accused's arrival. But PW6's re-examination evidence suggests death from the cardiac wound would likely have occurred within 5 to 15 minutes of infliction. This creates a question as to the timing of the fatal wound relative to the onset of the disturbance.
+- PW4 heard a door slam at approximately 12:20am. The CCTV and PW5 place the accused's departure at 12:28am — approximately 8 minutes later.
+
+The question of whether the door slam at 12:20am was the accused's departure or a separate event requires resolution by the parties.
+
+[TRIAL TO CONTINUE ON 11 FEBRUARY 2025 WITH FORENSIC EVIDENCE ON THE KNIFE AND DNA]

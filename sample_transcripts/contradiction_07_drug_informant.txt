@@ -1,0 +1,135 @@
+HIGH COURT OF SINGAPORE
+CRIMINAL CASE NO. HC/CC 8/2025
+
+PUBLIC PROSECUTOR v MARCUS TAN KIAN HONG
+
+Date of Hearing: 18 February 2025
+Coram: Justice Chan Seng Onn
+Counsel for Prosecution: Senior Deputy Public Prosecutor Mr. Victor Lim Wei Bin
+Counsel for Defence: Mr. Isaac Tay SC and Ms. Cheryl Ng Xinyi
+
+CASE SUMMARY:
+The accused faces two charges under the Misuse of Drugs Act (Cap 185): one
+charge under s.5(1)(a) for trafficking in not less than 28.63 grams of
+diamorphine (heroin), and one charge under s.8(a) for possession of 2.4 grams
+of methamphetamine. The accused denies trafficking, claiming the drugs found
+in his car were planted by a CNB informant. The informant, PW3, was granted
+a certificate of substantive assistance.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Staff Sergeant Lim
+Cheng Hwee, Central Narcotics Bureau (CNB))
+
+SDPP LIM: Staff Sergeant, can you describe the operation on 14 November 2024?
+PW1: On 14 November 2024, I led a team of CNB officers to conduct
+surveillance at the Geylang Lorong 14 carpark from 3pm. At 4:47pm
+we observed the accused, Marcus Tan, enter the carpark in a silver
+Toyota Camry bearing plate number SJH 8842 T. He parked in lot 18.
+He exited the car and opened the boot. At that point we moved in to
+arrest him. A search of the boot revealed two blocks wrapped in black
+tape in a plastic bag. These were later confirmed by HSA to contain
+heroin.
+
+SDPP LIM: Was there an informant involved in this operation?
+PW1: Yes. A registered informant, referred to in these proceedings as
+"Source A," provided information on 13 November 2024 that the accused
+would be collecting a consignment the following day.
+
+SDPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. TAY SC: Staff Sergeant, when did you first receive the tip-off from
+Source A?
+PW1: At approximately 8:35pm on 13 November 2024.
+
+MR. TAY SC: And Source A told you the accused would be at Geylang Lorong
+14 carpark the next day?
+PW1: Yes. At approximately 4:30 to 5pm.
+
+MR. TAY SC: The accused's arrest record shows he was arrested at 4:51pm.
+Yet the tip-off said "4:30 to 5pm." He arrived at 4:47pm. This is
+remarkably precise. How would Source A know the exact time and location?
+PW1: Informants often have inside information on drug transactions.
+
+MR. TAY SC: No further questions at this time.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW3 (Third Prosecution Witness — referred to as
+"Source A" per s.22 Misuse of Drugs Act non-disclosure; a person who provided
+information to CNB)
+
+[Note: Identity of PW3 is subject to a non-disclosure order. PW3 testified
+in court under conditions protecting their identity.]
+
+SDPP LIM: Source A, on 13 November 2024, did you receive information
+about the accused?
+PW3: Yes. A person I know contacted me and told me that Marcus Tan would
+be collecting drugs from a contact the following afternoon at Geylang
+Lorong 14 carpark. I reported this to my CNB handler the same evening.
+
+SDPP LIM: Had you dealt directly with the accused before?
+PW3: No. I received the information second-hand from an associate.
+
+SDPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW3
+
+MR. TAY SC: Source A, you say you received the information from an
+"associate." What is this associate's relationship to the accused?
+PW3: I cannot say without revealing my identity.
+
+MR. TAY SC: In your statement recorded by CNB on 20 November 2024,
+Exhibit D7, you stated — and I read from the statement — "I have
+known Marcus Tan personally for two years." But today you say you
+have not "dealt directly" with him. These are inconsistent — one
+implies personal acquaintance, the other denies direct contact.
+PW3: I know who he is. I have not personally transacted drugs with him.
+
+MR. TAY SC: In a second statement, Exhibit D8, recorded on 5 January 2025,
+you stated — and I quote — "I only knew of Marcus Tan through my
+contact. I had never met him personally." Can you explain the
+contradiction between "I have known Marcus Tan personally for two years"
+in November and "I had never met him personally" in January?
+PW3: I — the first statement may have been poorly worded. I meant I
+knew of him by reputation.
+
+MR. TAY SC: Did you at any time have access to the accused's vehicle?
+PW3: No.
+
+MR. TAY SC: On 13 November 2024 — the day before the arrest — where
+were you between 10am and 4pm?
+PW3: I was at home.
+
+MR. TAY SC: Phone records in Exhibit D9 show a call between your
+registered mobile number and a number registered to a person at
+Geylang Lorong 14 at 2:17pm on 13 November 2024. Were you near the
+accused's vehicle that afternoon?
+PW3: I may have called someone in that area. I was not near the vehicle.
+
+MR. TAY SC: No further questions.
+
+---
+
+COURT: The court notes the following significant inconsistencies in
+PW3's testimony:
+(1) PW3's first CNB statement (20 Nov 2024) states "I have known Marcus
+Tan personally for two years" — which the witness now characterises as
+knowing him "by reputation." This characterisation is not naturally
+read from the words "personally" and "two years."
+(2) PW3's second statement (5 Jan 2025) states "I had never met him
+personally" — which directly contradicts the November statement.
+(3) PW3's phone records place a call to the Geylang Lorong 14 area on
+13 November 2024 — the day before the alleged drugs transaction — which
+PW3 has not adequately explained.
+(4) The Defence's planting theory requires further examination in light
+of these inconsistencies.
+
+[HEARING TO CONTINUE ON 20 FEBRUARY 2025 WITH HSA ANALYST TESTIMONY
+AND FORENSIC EVIDENCE ON THE ACCUSED'S VEHICLE]

@@ -1,0 +1,140 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 131/2025
+
+PUBLIC PROSECUTOR v KELVIN SIM YEW SENG
+
+Date of Hearing: 17 March 2025
+Coram: District Judge Chai Li Ling
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Malcolm Ng Wei Jie
+Counsel for Defence: Ms. Shalini d/o Narayanan
+
+CASE SUMMARY:
+The accused is charged under s.454 of the Penal Code for housebreaking with
+intent to commit theft. On 6 February 2025, a residential unit at Bishan
+Street 22 was broken into and jewellery worth $8,400 and a laptop were stolen.
+The accused's fingerprints were found on the kitchen window latch. The accused
+claims he visited the unit legally the day before as a repairman.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Huang Fang,
+resident, victim)
+
+DPP NG: Ms. Huang, when did you discover the break-in?
+PW1: On 6 February 2025, I returned home at about 6:30pm. My front door
+was locked but when I went to the kitchen, the window was open. My bedroom
+had been ransacked. My jewellery box was missing. My laptop was gone.
+The kitchen window latch had been forced.
+
+DPP NG: Had you authorised anyone to be in your home that day?
+PW1: No. On 5 February — the day before — a repairman came to fix my
+air-conditioning unit. He was sent by my managing agent, Comfort Property
+Management. He only worked on the air-conditioning unit in the bedroom.
+He had no reason to go near the kitchen window.
+
+DPP NG: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Senior Station
+Inspector Rajan s/o Krishnaswamy, Investigation Officer)
+
+DPP NG: What did the forensic examination show?
+PW2: A latent fingerprint was lifted from the kitchen window latch interior.
+This was matched to the accused, Mr. Kelvin Sim, via the national fingerprint
+database.
+
+DPP NG: Did the managing agent's records confirm the accused carried out
+the air-conditioning repair on 5 February?
+PW2: Yes. Comfort Property Management's records show the accused attended
+unit #09-44 on 5 February 2025. He signed in at 10:14am and signed out
+at 11:47am.
+
+DPP NG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MS. SHALINI: SSI Rajan, the air-conditioning unit in the bedroom — is it
+located near the kitchen window?
+PW2: No. The bedroom is at the opposite end of the flat from the kitchen.
+
+MS. SHALINI: Were fingerprints found anywhere other than the kitchen
+window latch?
+PW2: The accused's fingerprints were also found on the bedroom air-conditioning
+unit — which is explained by the repair visit.
+
+MS. SHALINI: Were any other fingerprints found?
+PW2: Several partial prints were found on various surfaces, none with
+sufficient ridge detail to identify an individual other than the accused.
+
+MS. SHALINI: Could a person conducting a thorough inspection of a flat
+for other repair purposes have reason to touch a kitchen window latch?
+PW2: Not if their stated scope of work was limited to air-conditioning.
+
+MS. SHALINI: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Kelvin Sim Yew Seng)
+
+MS. SHALINI: Mr. Kelvin, when you carried out the repair on 5 February,
+did you touch the kitchen window?
+DW1: Yes. When I arrived, I did a walkthrough of the flat to see if there
+were other issues — loose fittings, water damage that might affect the
+air-conditioning. I touched the kitchen window latch to check whether
+it had a moisture seal issue. This is standard practice.
+
+MS. SHALINI: Did Ms. Huang ask you to check for moisture issues?
+DW1: She was not present. She had left a key with the property management.
+I typically do a quick check of windows near air-conditioning ducts
+because moisture from poor sealing can affect the units.
+
+MS. SHALINI: Where were you on 6 February 2025?
+DW1: I was on a job at Queenstown from 9am to 3pm. Then I went home.
+
+MS. SHALINI: Can you prove this?
+DW1: Yes. Comfort Property Management has my job sheet for 6 February —
+I was at Block 48 Commonwealth Drive from 9:15am to 2:50pm. Exhibit D4.
+
+MS. SHALINI: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP NG: Mr. Kelvin, you said you did a "walkthrough" of Ms. Huang's flat.
+When Comfort Property Management sent you to that unit, what was your
+written work order?
+DW1: Air-conditioning maintenance — cleaning and filter replacement.
+
+DPP NG: Your company's work orders, Exhibit P11, state: "Technician to
+attend to specified unit only. No inspection of other units or common areas
+without separate authorisation." Is a general walkthrough within your
+authorised scope?
+DW1: I use my judgment on the ground.
+
+DPP NG: Do you have a record in your daily logs of checking the kitchen
+window at Ms. Huang's unit?
+DW1: No. It was a quick informal check.
+
+DPP NG: You mentioned this "moisture check" practice for the first time
+in your testimony here. In your police statement, Exhibit P12, when asked
+why your fingerprints were on the kitchen window, you said: "I don't know.
+Maybe I bumped it." Now you have a detailed explanation. When did you
+develop this account?
+DW1: I thought about it more carefully after the police interview.
+
+DPP NG: No further questions.
+
+COURT: The court notes the following significant inconsistency:
+(1) When first asked about the fingerprint in his police statement, the
+accused said "I don't know. Maybe I bumped it." In court he now offers
+a detailed explanation about a "moisture seal inspection walkthrough."
+(2) This explanation was not in the police statement and appears to have
+emerged only in preparation for trial. The court will assess whether
+this explanation is credible or a reconstruction.
+(3) The alibi for 6 February 2025 is documented and will be verified.
+
+[HEARING ADJOURNED FOR ALIBI VERIFICATION ON 19 MARCH 2025]

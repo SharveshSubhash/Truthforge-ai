@@ -1,0 +1,169 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 41/2025
+
+PUBLIC PROSECUTOR v MUHD FAIZAL BIN ROSLAN
+
+Date of Hearing: 14 January 2025
+Coram: District Judge Lim Pek Hoon
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Natalie Yeo Hui Shan
+Counsel for Defence: Mr. Alvin Tan Boon Huat
+
+CASE SUMMARY:
+The accused is charged under s.392 of the Penal Code for robbery. It is alleged
+that on 18 October 2024 at approximately 10:50pm, at a 7-Eleven store at Tampines
+Street 45, the accused grabbed a customer's handbag and fled. The accused denies
+being at the location at the stated time, claiming he was at a friend's flat in
+Bedok at the material time.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Tan Pei Ying,
+victim, 34 years old, administrative assistant)
+
+DPP YEO: Ms. Tan, what happened to you on 18 October 2024?
+PW1: I was at the 7-Eleven at Tampines Street 45 buying drinks. I had placed
+my handbag on the counter when a man came up beside me very quickly and
+grabbed my bag off the counter. He then ran out of the store. I was in
+shock. My bag contained my wallet with $340 cash, my NRIC, and my phone.
+
+DPP YEO: What time was this?
+PW1: It was about 10:48pm. I remember because I looked at the store clock
+after it happened — it showed 10:48.
+
+DPP YEO: Can you describe the man?
+PW1: Malay male, twenties, medium build. He was wearing a dark red
+hoodie and black jeans. He had a distinctive scar on his left cheek.
+
+DPP YEO: Did you identify the accused?
+PW1: Yes. The police showed me a photo array two days later. I identified
+the accused immediately.
+
+DPP YEO: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. TAN: Ms. Tan, you said the store clock showed 10:48pm. Are you certain?
+PW1: Yes, I remember specifically because I was thinking about whether to
+call the police immediately.
+
+MR. TAN: The 7-Eleven store clock — is it known to be accurate? Could it
+be fast or slow?
+PW1: I don't know. It looked like a normal wall clock.
+
+MR. TAN: The accused has a scar on his right cheek, not his left cheek.
+Are you sure about which side?
+PW1: It may have been the right side. I was very frightened. I may have
+been confused about left and right.
+
+MR. TAN: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Mr. Rajendran s/o
+Subramaniam, store cashier, 7-Eleven Tampines Street 45)
+
+DPP YEO: Mr. Raj, were you on duty on 18 October 2024?
+PW2: Yes. I was the cashier from 10pm to 6am.
+
+DPP YEO: Did you witness the robbery?
+PW2: Yes. A man in a reddish hoodie came in, went to the counter area
+and grabbed a bag. He then ran out. It was very fast — maybe 10 seconds.
+
+DPP YEO: What time did this occur?
+PW2: About 10:50pm. I noted it because I was about to do my hourly
+stock count at 11pm and I had just checked the time.
+
+DPP YEO: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW3 (Third Prosecution Witness — Sergeant Loh Wee Kiat,
+Investigation Officer, Tampines Police Division)
+
+DPP YEO: Sergeant Loh, you reviewed the CCTV footage from the 7-Eleven store?
+PW3: Yes. The store has a CCTV system. I reviewed the footage for the
+relevant night.
+
+DPP YEO: What did the footage show?
+PW3: The footage is in evidence as Exhibit P8. It shows a male person
+entering the store at 22:53:07 — that is 10:53pm and 7 seconds — and
+exiting at 22:53:29 — approximately 22 seconds later. The timestamp
+is generated automatically by the store's recording system.
+
+DPP YEO: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW3
+
+MR. TAN: Sergeant Loh, PW1 said the robbery was at 10:48pm and PW2 said
+it was at 10:50pm. The CCTV shows entry at 10:53pm. That is a discrepancy
+of 3 to 5 minutes. How do you reconcile this?
+PW3: The CCTV timestamp is the most reliable record. Human memory of
+time can be imprecise, especially in a stressful situation.
+
+MR. TAN: Was the CCTV timestamp itself verified as accurate?
+PW3: I compared the CCTV clock to the time shown on the police
+officer's phone when we attended the scene later. The CCTV was
+approximately 2 minutes fast — showing 10:55pm when the phone
+showed 10:53pm.
+
+MR. TAN: So if the CCTV is 2 minutes fast, the actual time of entry
+was approximately 10:51pm — not 10:53pm.
+PW3: That is possible, yes.
+
+MR. TAN: Still different from the 10:48pm and 10:50pm stated by the
+witnesses.
+PW3: Yes. There is a discrepancy of 1 to 3 minutes.
+
+MR. TAN: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Muhd Faizal bin Roslan)
+
+MR. TAN: Mr. Faizal, where were you on the evening of 18 October 2024?
+DW1: I was at my friend Hazrul's flat in Bedok North Avenue 4. We were
+watching a football match — the Champions League. The match started
+at 9pm Singapore time. I was there from about 8:30pm until after midnight.
+
+MR. TAN: Can anyone confirm this?
+DW1: Hazrul can confirm. And two other friends — Bobby and Rizal —
+were also there.
+
+MR. TAN: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP YEO: Mr. Faizal, Bedok North Avenue 4 to Tampines Street 45 — how
+long does that journey take?
+DW1: By bus it takes about 30 minutes. By taxi maybe 15 minutes.
+
+DPP YEO: So you could theoretically have left Bedok at 10:30pm, committed
+the robbery at 10:51pm, and returned by 11:15pm?
+DW1: But I was not there. I did not leave Hazrul's flat.
+
+DPP YEO: The accused's EZ-Link card, Exhibit P14 — it records a bus trip
+from Tampines Interchange at 11:16pm on 18 October 2024. Can you explain this?
+DW1: That is not my card.
+
+DPP YEO: The EZ-Link card is registered to your NRIC number: S9312047A.
+DW1: Someone must have used my card.
+
+DPP YEO: No further questions.
+
+COURT: The court notes the following contradictions:
+(1) PW1 placed the robbery at 10:48pm; PW2 placed it at 10:50pm; the
+CCTV (adjusted for 2-minute fast clock) places it at approximately
+10:51pm — a discrepancy across all three sources.
+(2) The accused claims to have been in Bedok throughout, but his
+EZ-Link card records a Tampines Interchange tap at 11:16pm that evening.
+(3) PW1 initially described the scar as on the left cheek; cross-examination
+revealed it is on the right cheek.
+These contradictions require resolution.
+
+[HEARING TO CONTINUE ON 16 JANUARY 2025 WITH ALIBI WITNESSES]

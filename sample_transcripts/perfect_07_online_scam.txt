@@ -1,0 +1,125 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 191/2025
+
+PUBLIC PROSECUTOR v HAN WEI QIANG
+
+Date of Hearing: 21 April 2025
+Coram: District Judge Chong Soo Lim
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Lim Boon Teck
+Counsel for Defence: Mr. Steven Lee Han Jun
+
+CASE SUMMARY:
+The accused is charged under s.420 read with s.34 of the Penal Code for
+cheating as part of a syndicate. It is alleged that between October and
+December 2024, the accused participated in a fake online shopping scam,
+operating as a money mule receiving and transferring fraudulently obtained
+funds. The accused received a total of S$47,200 across 14 transactions.
+The accused claims he thought he was doing legitimate remittance work.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Patricia Tan
+Siew Choo, victim, 52 years old, accounts clerk)
+
+DPP LIM: Ms. Patricia, what happened to you?
+PW1: In November 2024, I saw an Instagram advertisement for branded bags
+at 80% discount. I placed orders for three bags totalling $2,460. I
+transferred money to a PayNow number as instructed. No bags arrived.
+When I tried to contact the seller, the Instagram account was gone.
+
+DPP LIM: Did you receive any of your money back?
+PW1: The police later told me the PayNow number received my payment and
+transferred it out the same day. Nothing was recovered for me.
+
+DPP LIM: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Inspector Lim
+Jin Long, Commercial Affairs Department, Singapore Police Force)
+
+DPP LIM: Inspector Lim, can you describe the accused's role?
+PW2: The accused received 14 separate transfers from 11 different victims
+across October to December 2024, totalling S$47,200. On each occasion
+the money was received into his OCBC account, Exhibit P4, and then
+immediately transferred — within minutes — to two overseas accounts in
+Thailand and Vietnam.
+
+DPP LIM: What was the accused told about the work?
+PW2: The accused's own WhatsApp messages, Exhibit P5, show conversations
+with a contact named "Boss Tony" in which Boss Tony explained: "Your
+job — receive money, send it. Take 3% each time." The accused replied:
+"Okay but if police ask?" Boss Tony said: "Just say you don't know."
+The accused replied: "Okay."
+
+DPP LIM: Were warnings given to the accused?
+PW2: Yes. The OCBC bank sent the accused an SMS warning on 3 November 2024:
+"Unusual activity detected. Do not transfer funds if requested by strangers.
+This may be a scam." The accused continued to receive and transfer funds
+for another 6 weeks after receiving this warning.
+
+DPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. LEE: Inspector Lim, "Boss Tony" — has he been identified and charged?
+PW2: Investigations are ongoing. We believe Boss Tony is overseas.
+The accused is one member of a larger syndicate.
+
+MR. LEE: The accused's 3% commission — how much did he actually keep?
+PW2: Approximately $1,416 across 14 transactions.
+
+MR. LEE: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Han Wei Qiang)
+
+MR. LEE: Mr. Han, did you know you were participating in a scam?
+DW1: I did not know. Boss Tony told me it was a legal remittance service
+for workers who cannot use banks easily. I thought it was like Western
+Union, just informal.
+
+MR. LEE: What about the bank SMS warning you received?
+DW1: I saw it but I thought it was a generic warning that banks send to
+everyone. I did not think it applied to my situation.
+
+MR. LEE: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP LIM: Mr. Han, Boss Tony told you "if police ask, just say you don't
+know." You agreed. If you genuinely believed this was legitimate
+remittance work, why would you need a cover story for the police?
+DW1: I — I was just following instructions. I didn't think about it.
+
+DPP LIM: Is it standard in legitimate remittance work to be told what
+to say to the police?
+DW1: No.
+
+DPP LIM: The 14 victims who transferred money to your account all lost
+money purchasing goods that never existed. You transferred their money
+overseas within minutes. You received a clear bank warning. You had
+a rehearsed police denial ready. Given all of this, is it your evidence
+that you genuinely did not suspect anything was wrong?
+DW1: I trusted Boss Tony. I was naive.
+
+DPP LIM: No further questions.
+
+COURT: The prosecution evidence is consistent and compelling:
+- PW1 (victim): Clear account of being defrauded; PayNow linked to
+  accused's account.
+- PW2 (CAD officer): 14 traced transfers totalling $47,200; WhatsApp
+  evidence showing accused was explicitly briefed to lie to police.
+- Bank warning SMS: Accused continued operations 6 weeks after explicit
+  warning.
+- No material inconsistencies in the prosecution case.
+The accused's claimed naivety is difficult to reconcile with the
+WhatsApp instruction to deny knowledge to police, which the accused
+accepted without objection.
+
+[HEARING TO CONTINUE FOR CLOSING SUBMISSIONS]

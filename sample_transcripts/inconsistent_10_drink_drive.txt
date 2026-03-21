@@ -1,0 +1,124 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 241/2025
+
+PUBLIC PROSECUTOR v ANDREW LIM TECK HIAN
+
+Date of Hearing: 19 May 2025
+Coram: District Judge Chan Yew Teck
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Leong Sook Ying
+Counsel for Defence: Mr. Henry Ng Bak Heng
+
+CASE SUMMARY:
+The accused is charged under s.67(1)(b) of the Road Traffic Act for driving
+whilst under the influence of alcohol. He was stopped at a police roadblock
+at Bukit Timah Road at 1:05am on 8 February 2025. A breathalyser test
+recorded 48 micrograms of alcohol per 100ml of breath — the legal limit
+is 35 micrograms. The accused claims he consumed only two glasses of wine
+hours earlier and that the reading was affected by a medical condition.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Sergeant
+Muhammad Hafizuddin bin Masri, Traffic Police)
+
+DPP LEONG: Sergeant, describe the circumstances of the accused's arrest.
+PW1: At approximately 1:05am on 8 February 2025, I was manning a
+roadblock at the Bukit Timah Road and Dunearn Road junction. The accused's
+vehicle, a white BMW, was waved in for a routine check. I detected
+alcohol on his breath. I administered the breathalyser test using the
+Lion Alcolmeter SD-400. The reading was 48 micrograms of alcohol per
+100ml of breath. This exceeds the legal limit of 35 micrograms. I placed
+him under arrest.
+
+DPP LEONG: Was the accused cooperative?
+PW1: Yes. He did not resist. He said: "I only had two glasses of wine
+at dinner."
+
+DPP LEONG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. NG: Sergeant, when was the Lion Alcolmeter last calibrated?
+PW1: The device certification, Exhibit D4, shows calibration on
+15 January 2025 — three weeks before the incident. Within the standard
+6-month calibration cycle.
+
+MR. NG: Did you offer the accused a blood test to confirm the reading?
+PW1: Yes. He declined.
+
+MR. NG: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Andrew Lim Teck Hian)
+
+MR. NG: Mr. Andrew, how much did you drink on the evening of 7 February?
+DW1: I was at a client dinner at a restaurant in Dempsey Hill from 7pm.
+I had exactly two glasses of red wine — one at about 7:30pm and one
+at about 8:30pm. I stopped after that because I had my car. I had
+coffee and water for the rest of the evening. I left at midnight.
+
+MR. NG: If you had only two glasses ending at 8:30pm, why did the test
+at 1:05am show a reading above the legal limit?
+DW1: I have a condition — GERD, gastroesophageal reflux disease — which
+causes stomach acid with alcohol content to rise and contaminate
+breathalyser readings. My doctor has confirmed this. Exhibit D5 is
+the medical certificate.
+
+MR. NG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP LEONG: Mr. Andrew, your client dinner — who else attended?
+DW1: Three clients from a property developer and two of my colleagues.
+
+DPP LEONG: Can any of them confirm you stopped drinking at 8:30pm?
+DW1: My colleague Michael Tay was with me. He can confirm.
+
+DPP LEONG: In your police statement at 1:30am on 8 February, Exhibit P3,
+you said: "I had two or three glasses of wine during dinner." Now in
+court you say "exactly two glasses." Which is correct?
+DW1: Two glasses. I said "two or three" because I was tired and nervous
+at 1:30am. It was two.
+
+DPP LEONG: Your GERD condition — when were you diagnosed?
+DW1: November 2024.
+
+DPP LEONG: The medical report, Exhibit D5, is dated 20 February 2025 —
+twelve days after your arrest. It was prepared after these proceedings
+began?
+DW1: I went to see my doctor to document my condition for the case, yes.
+
+DPP LEONG: Your personal Instagram account posted a photo at 11:45pm
+on 7 February 2025 — 15 minutes before you departed — showing you holding
+what appears to be a wine glass. Is this from the same dinner?
+DW1: Yes. But I was just holding the glass for the photo. I was not
+drinking at that point.
+
+DPP LEONG: The caption reads: "Great dinner with amazing clients! #wine
+#redwine." Is this consistent with someone who stopped drinking at 8:30pm
+and was conscious of driving?
+DW1: The caption was social media language. I did not drink further
+after 8:30pm.
+
+DPP LEONG: No further questions.
+
+COURT: The court notes the following inconsistencies for consideration:
+(1) The accused's police statement says "two or three glasses"; his
+court testimony says "exactly two." This is an inconsistency in a
+key fact.
+(2) The Instagram photo at 11:45pm shows the accused holding a wine
+glass, inconsistent with his claim of having stopped drinking at 8:30pm —
+though he provides an explanation.
+(3) The GERD defence was documented via a medical report prepared after
+arrest and after the case was initiated. While this does not invalidate
+the condition, the timing raises a credibility issue.
+(4) The accused declined a blood test, which would have provided a
+more definitive measurement.
+
+[HEARING ADJOURNED FOR MEDICAL EXPERT EVIDENCE ON GERD AND BREATHALYSERS
+ON 21 MAY 2025]

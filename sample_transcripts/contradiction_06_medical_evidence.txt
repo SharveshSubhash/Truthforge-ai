@@ -1,0 +1,166 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 74/2025
+
+PUBLIC PROSECUTOR v RAYMOND GOH CHEE SENG
+
+Date of Hearing: 5 February 2025
+Coram: District Judge Ho Shi Yuan
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Sandra Lim Hui Ying
+Counsel for Defence: Mr. Bernard Wong Kok Wai
+
+CASE SUMMARY:
+The accused is charged under s.325 of the Penal Code for voluntarily causing
+grievous hurt to his wife, Ms. Christine Tan Bee Lian, on 3 January 2025 at
+their matrimonial home at Pasir Ris Drive 6. The victim sustained a fracture
+to her left wrist and bruising to her ribs. The accused claims his wife's
+injuries resulted from a fall.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Christine Tan
+Bee Lian, victim, 38 years old, homemaker)
+
+DPP LIM: Ms. Christine, what happened on 3 January 2025?
+PW1: My husband Raymond came home late, around midnight. He had been
+drinking. We argued about money. He became very angry. He grabbed my
+left arm and twisted it violently. I screamed. He then punched me on
+my right side — the ribs. I fell to the ground. He stopped when the
+children woke up and cried. I took a taxi to Changi General Hospital
+the next morning.
+
+DPP LIM: Had there been previous incidents?
+PW1: Yes. Three previous times in 2024. But I never reported because
+I was afraid.
+
+DPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. WONG: Ms. Christine, you said your husband twisted your left arm.
+But in your police statement, Exhibit D2, you stated he "pushed me and
+I fell against the sofa, hurting my arm." Which is correct?
+PW1: He pushed me and also twisted my arm. I may not have included
+all the details in my police statement because I was still frightened.
+
+MR. WONG: You said he punched you on the right side. But your medical
+report, Exhibit D4, shows bruising on the left lateral ribs. Which
+side were you hit on?
+PW1: I — may have been confused about left and right. It was the side
+near the sofa arm.
+
+MR. WONG: Your statement to the doctor at Changi General Hospital,
+recorded in the A&E notes at Exhibit D5, states: "I fell down the stairs."
+Can you explain why you told the doctor you fell down stairs?
+PW1: I was scared. I did not want to cause trouble at the hospital. I
+made up the story about the stairs.
+
+MR. WONG: So you lied to the hospital staff?
+PW1: I was frightened of Raymond. I only told the truth to the police.
+
+MR. WONG: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Dr. Phyllis Ong
+Xiu Ying, Emergency Medicine Consultant, Changi General Hospital)
+
+DPP LIM: Dr. Phyllis, what were the victim's injuries?
+PW2: Ms. Christine presented at 8:42am on 4 January 2025. She had a
+distal radius fracture — a fracture at the wrist end of the radius bone
+in her left forearm — and bruising over the left lateral rib cage,
+consistent with impact. We assessed three to four ribs were bruised,
+with no fractures. A wrist fracture of this type is commonly called
+a "Colles' fracture."
+
+DPP LIM: Are these injuries consistent with an assault as described
+by the victim in court?
+PW2: The wrist fracture is consistent with a forceful torsional
+injury — twisting — or a fall onto an outstretched hand. The rib
+bruising is more typically caused by direct impact, blunt force.
+
+DPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. WONG: Dr. Phyllis, you said the wrist fracture is consistent with
+either a twisting injury or a fall. Is a fall on stairs a plausible
+mechanism for such injuries?
+PW2: Yes. A person falling down stairs who puts out their hand to
+break the fall could sustain this type of wrist fracture. And if
+they impact a wall or banister on the way down, rib bruising is
+also plausible.
+
+MR. WONG: So the patient's original account — that she fell down
+stairs — is medically consistent with her injuries?
+PW2: Yes, mechanically consistent.
+
+MR. WONG: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Raymond Goh Chee Seng)
+
+MR. WONG: Mr. Raymond, what happened on 3 January 2025?
+DW1: I came home at about 11:30pm. I admit I had some drinks. Christine
+and I had an argument. She became very agitated and ran toward the
+stairs. I tried to hold her back. She slipped on the top step and
+fell partway down the stairs. I didn't assault her. She was hurt in
+the fall and I was very worried.
+
+MR. WONG: Why did you not take her to the hospital yourself?
+DW1: She refused. She said she was okay. In the morning I was already
+at work when she decided to go to the hospital.
+
+MR. WONG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP LIM: Mr. Raymond, you said Christine "ran toward the stairs" and
+you "tried to hold her back." If you were holding her back, your hands
+would have been on her — specifically, her arm?
+DW1: Yes, I grabbed her wrist area to stop her from running.
+
+DPP LIM: So you admit to grabbing her wrist?
+DW1: To prevent a fall, yes.
+
+DPP LIM: The medical report indicates the fracture mechanism is
+torsional — consistent with twisting. Simply grabbing a wrist to
+prevent someone running would not normally cause a torsional Colles'
+fracture. Did you twist her wrist?
+DW1: I did not intentionally twist it. I was gripping her strongly
+to pull her back.
+
+DPP LIM: Your home does not have stairs. Exhibit P4 is the HDB floor
+plan for your unit at Block 512, Pasir Ris Drive 6. It is a 4-room
+HDB flat on the 10th floor. There is no internal staircase. How did
+Christine fall down stairs?
+DW1: I — I meant the corridor outside. She went out and fell in the
+stairwell outside the flat.
+
+DPP LIM: Your police statement from 6 January 2025 says the fall
+happened "inside our home." Now you say the corridor stairwell. Which
+is correct?
+DW1: I was confused during the police statement.
+
+DPP LIM: No further questions.
+
+COURT: The court notes the following critical contradictions:
+(1) The accused's claim that his wife fell down stairs is inconsistent
+with the floor plan evidence: the matrimonial home is a standard HDB
+flat without internal stairs, and the accused's own police statement
+placed the fall "inside our home."
+(2) The accused's account changed during cross-examination: from
+"inside our home" to "the corridor stairwell."
+(3) PW1's account in the A&E notes ("fell down stairs") differs from
+her court testimony (twisting and punch), though PW1 offered an
+explanation for this difference.
+(4) The side of the rib bruising — PW1 says right side in court, but
+medical records show left lateral bruising.
+
+[HEARING TO CONTINUE ON 7 FEBRUARY 2025 WITH CHILDREN'S TESTIMONY]

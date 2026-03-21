@@ -1,0 +1,139 @@
+HIGH COURT OF SINGAPORE
+CRIMINAL CASE NO. HC/CC 12/2025
+
+PUBLIC PROSECUTOR v WINSTON LEE BENG HUAT
+
+Date of Hearing: 10 March 2025
+Coram: Justice Audrey Lim
+Counsel for Prosecution: Senior Deputy Public Prosecutor Mr. Heng Jian Sheng
+Counsel for Defence: Mr. David Nair SC and Mr. Kenneth Chew
+
+CASE SUMMARY:
+The accused, a former director of Pinnacle Marine Services Pte Ltd, faces
+three charges under s.409 of the Penal Code for criminal breach of trust as
+an agent, involving misappropriation of S$1.87 million from company accounts
+between March 2022 and August 2024. The accused claims the transfers were
+authorised for business purposes and denies misappropriation.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Albert Wee Chee
+Hock, Chief Financial Officer, Pinnacle Marine Services Pte Ltd)
+
+SDPP HENG: Mr. Albert, when did you first discover the alleged irregularities?
+PW1: In September 2024, during the preparation of our FY2024 annual
+audit. Our external auditors flagged three bank transfers totalling
+S$1.87 million to an entity called "Meridian Venture Capital Pte Ltd."
+I had no knowledge of any approved investment in Meridian. The transfers
+had been authorised using Winston's digital token.
+
+SDPP HENG: Was there any board resolution approving these transfers?
+PW1: No. Any investment above S$500,000 requires full board approval
+under our articles of association. No board meeting was called for
+this purpose. I checked the board minutes thoroughly.
+
+SDPP HENG: Had Pinnacle Marine received any benefit from Meridian
+Venture Capital?
+PW1: None. When I searched ACRA records, Meridian Venture Capital Pte Ltd
+was incorporated on 4 March 2022 — one week before the first transfer
+to it. The sole director and shareholder is a Mr. Philip Tan Ah Kow.
+
+SDPP HENG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. NAIR SC: Mr. Albert, Pinnacle Marine's articles of association
+require board approval for investments above S$500,000. But the three
+transactions were each below S$500,000, were they not? Exhibit D8
+shows transfers of S$490,000, S$498,500, and S$881,500.
+PW1: Two of the three are below S$500,000 on their face. The third
+is S$881,500.
+
+MR. NAIR SC: Could the two smaller transactions have been within Mr. Lee's
+executive authority as managing director?
+PW1: Our internal policy is that the MD may approve investments up to
+S$500,000 for listed vendors. Meridian was not a listed vendor.
+
+MR. NAIR SC: But you said Mr. Lee's authority applies to "listed vendors."
+Was that an oral policy or in writing?
+PW1: It was in the internal policies document dated 2020. Exhibit P12.
+
+MR. NAIR SC: Looking at Exhibit P12, the relevant section reads: "The
+Managing Director may approve payments to existing counterparties up
+to S$500,000 without board approval." It says "payments" and "existing
+counterparties" — not "investments" and "listed vendors" as you stated.
+PW1: The spirit of the provision —
+MR. NAIR SC: The document says what it says. Thank you. No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Winston Lee Beng Huat)
+
+MR. NAIR SC: Mr. Winston, can you explain the transfers to Meridian
+Venture Capital?
+DW1: Meridian was a business development partner. We were exploring
+a joint venture in offshore marine services in Indonesia. The transfers
+were advance payments and capital contributions for this potential
+venture. I discussed this with our board chairman, Mr. David Tan Ah Kow,
+on several occasions.
+
+MR. NAIR SC: Was there documentation of this understanding?
+DW1: Yes. Email exchanges between myself and David Tan. I have provided
+these as Exhibit D9.
+
+MR. NAIR SC: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+SDPP HENG: Mr. Winston, the director of Meridian Venture Capital is
+Philip Tan Ah Kow. You refer to your chairman as David Tan Ah Kow.
+Are Philip and David the same person?
+DW1: No. Philip is David's son. Philip was running the venture on
+his father's behalf.
+
+SDPP HENG: This is the first time in these proceedings that you have
+mentioned Philip Tan being David Tan's son. This relationship does
+not appear in your police statements, your Case for the Defence, or
+your witness list. Can you explain this omission?
+DW1: I assumed it was common knowledge among those involved.
+
+SDPP HENG: Your email exchanges, Exhibit D9 — I note these emails
+are between you and an address "david.tan@pinnaclemarine.com.sg." That
+is an internal Pinnacle email address. If David Tan was representing
+Meridian — an external company — why were these discussions on internal
+email?
+DW1: We were exploring whether Meridian would become an internal
+investment vehicle. It was informal at that stage.
+
+SDPP HENG: The metadata of Exhibit D9, as analysed by the prosecution's
+forensics expert in Exhibit P18, shows all emails in the chain were
+created on the same computer on 3 October 2024 — after these proceedings
+were initiated. Can you explain why emails you claim were sent between
+2022 and 2024 were all created on one day in October 2024?
+DW1: I do not understand metadata. I printed them from my email.
+
+SDPP HENG: The metadata shows they were created on your personal
+MacBook Air, not a mail server. They appear to have been composed,
+not received.
+DW1: That is not correct.
+
+SDPP HENG: No further questions.
+
+COURT: The court notes the following significant contradictions:
+(1) The accused described the chairman's name as "David Tan Ah Kow"
+but the Meridian director is "Philip Tan Ah Kow" — a distinction
+the accused disclosed only during cross-examination, not in prior
+statements.
+(2) The forensic metadata evidence in Exhibit P18 indicates the
+email chain in Exhibit D9 may have been fabricated on a single day
+after these proceedings began. This is a serious issue going to
+the heart of the defence.
+(3) The prosecution's policy interpretation ("existing counterparties")
+and the defence's interpretation ("listed vendors") differ — the
+court will construe the document.
+
+[HEARING TO CONTINUE ON 12 MARCH 2025 WITH FORENSICS EXPERT TESTIMONY]

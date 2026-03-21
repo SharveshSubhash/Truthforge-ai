@@ -1,0 +1,137 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 229/2025
+
+PUBLIC PROSECUTOR v FRANCIS TAN CHENG HUAT
+
+Date of Hearing: 12 May 2025
+Coram: District Judge Ng Peng Hock
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Julia Lim Wei Min
+Counsel for Defence: Mr. Tan Teck Hian SC
+
+CASE SUMMARY:
+The accused, a former Building and Construction Authority (BCA) inspector,
+faces three charges under s.6(a) of the Prevention of Corruption Act (PCA)
+for corruptly receiving gratification. It is alleged that between March
+and July 2024, the accused received a total of S$18,500 in three payments
+from Mr. Eric Wong, a building contractor, in exchange for favourable
+inspection outcomes on three HDB upgrading projects. The accused claims
+the money was legitimate loans from a friend.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Eric Wong
+Bak Kuan, contractor, granted conditional immunity)
+
+DPP LIM: Mr. Eric, why did you make payments to the accused?
+PW1: Francis was the BCA inspector assigned to my three HDB projects.
+In March 2024 he told me my first project had "issues" that would
+require re-inspection and delay. He said it could be "resolved quickly"
+with some "coffee money." I understood this as a bribe. I paid him
+$5,000 cash. He passed the inspection the same week.
+
+DPP LIM: Were there further payments?
+PW1: Yes. S$7,000 in May 2024 and S$6,500 in July 2024, for the
+second and third projects respectively. Total S$18,500.
+
+DPP LIM: How did you make these payments?
+PW1: All cash. I withdrew the amounts from my OCBC business account
+before each meeting. The withdrawals are in my bank records.
+
+DPP LIM: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. TAN SC: Mr. Eric, you were also investigated by CPIB. You are
+testifying under a conditional immunity arrangement?
+PW1: Yes.
+
+MR. TAN SC: If you do not cooperate truthfully, the immunity is revoked?
+PW1: Yes.
+
+MR. TAN SC: You therefore have every incentive to give the account
+that satisfies the CPIB?
+PW1: I am telling the truth.
+
+MR. TAN SC: In your first CPIB statement, recorded 10 September 2024,
+you stated the first payment was S$3,000, not S$5,000. In your second
+statement on 15 October 2024, you revised this to S$5,000. Which is correct?
+PW1: The S$5,000 is correct. I was nervous in the first interview and
+I underestimated.
+
+MR. TAN SC: Your bank records, Exhibit D5, show a cash withdrawal of
+S$4,800 on 18 March 2024 — not S$5,000. If you paid S$5,000, where
+did the extra $200 come from?
+PW1: I may have had some cash on hand. I topped it up from pocket money.
+
+MR. TAN SC: So the withdrawal amount does not precisely match the alleged
+bribe amount?
+PW1: Not precisely. But it is close.
+
+MR. TAN SC: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Francis Tan Cheng Huat)
+
+MR. TAN SC: Mr. Francis, what was the nature of your relationship with
+Mr. Eric Wong?
+DW1: We are friends from NS days — we served in the same unit 20 years
+ago. We have kept in touch. He has occasionally lent me money when I
+was in difficulty. The three payments in 2024 were loans.
+
+MR. TAN SC: Did these loans relate to your professional decisions?
+DW1: No. My inspection outcomes were based purely on merit. I have an
+impeccable record — 15 years of service, no prior complaints.
+
+MR. TAN SC: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP LIM: Mr. Francis, you say you and Eric Wong are old NS friends who
+keep in touch. How often do you meet?
+DW1: A few times a year.
+
+DPP LIM: Your own phone records, Exhibit P9, show no communication
+between your number and Mr. Wong's number in the 18 months prior to
+March 2024 — when the alleged first bribe was made. How does this
+reconcile with your claim of ongoing social contact?
+DW1: We may have communicated through other channels. Or met socially
+at group events.
+
+DPP LIM: The timing: a payment in March 2024 coincides with the first
+inspection; a payment in May coincides with the second; a payment in
+July coincides with the third. Is this coincidence?
+DW1: Yes. I needed money at those times. Eric was generous.
+
+DPP LIM: Were there any loan agreements or acknowledgments of debt?
+DW1: No. It was informal. Between friends.
+
+DPP LIM: Have you repaid any of the S$18,500?
+DW1: Not yet. I intend to.
+
+DPP LIM: The three projects you inspected — all three passed on the
+first re-inspection after the alleged payments. Did you note any
+deficiencies in these projects?
+DW1: My records show the works met standards.
+
+DPP LIM: Your senior supervisor, Mr. Huang, testified in a voir dire
+that two of these projects had known structural concerns flagged in
+pre-inspection reports. Did you know of these concerns?
+DW1: I relied on my own assessment on the day.
+
+DPP LIM: No further questions.
+
+COURT: The court notes the following contradictions:
+(1) PW1's first CPIB statement alleged S$3,000 for the first payment;
+he now says S$5,000. The bank withdrawal shows S$4,800.
+(2) The accused claims a friendship with regular social contact, but
+phone records show no direct communication for 18 months before the
+alleged payments began.
+(3) The timing of "loans" precisely matching inspection dates is a
+significant circumstance to be weighed.
+
+[HEARING TO CONTINUE ON 14 MAY 2025 WITH SUPERVISOR AND CPIB OFFICER TESTIMONY]

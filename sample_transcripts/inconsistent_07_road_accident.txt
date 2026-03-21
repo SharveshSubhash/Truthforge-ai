@@ -1,0 +1,115 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 155/2025
+
+PUBLIC PROSECUTOR v LEE CHENG KWONG
+
+Date of Hearing: 1 April 2025
+Coram: District Judge Teo Wei Ling
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Poh Juang Hong
+Counsel for Defence: Mr. Wee Teng Han
+
+CASE SUMMARY:
+The accused is charged under s.65(1)(b) of the Road Traffic Act for driving
+without due care and attention. On 8 January 2025, the accused's van collided
+with a cyclist, Mr. Heng Ah Seng, 68, at the junction of Tampines Avenue 1
+and Tampines Avenue 10. The cyclist sustained a fractured collarbone and
+concussion. The accused's account of the collision has evolved between his
+police statement, his police interview, and his court testimony.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Heng Ah Seng,
+victim, 68 years old, retired)
+
+DPP POH: Mr. Heng, can you describe what happened?
+PW1: I was cycling along Tampines Avenue 1 toward the junction. The
+traffic light for cyclists was green. I was in the cycling lane. A van
+came from my right, turning left across my lane. It hit me. I flew off
+my bicycle. I remember hitting the ground. Next thing I remember is the
+ambulance.
+
+DPP POH: Did you see the colour of the traffic light when you entered
+the junction?
+PW1: It was green. I am certain.
+
+DPP POH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. WEE: Mr. Heng, you said you are "certain" the light was green. But
+you were concussed in the accident. Are you sure you accurately recall
+the light colour?
+PW1: I saw it before the impact. My memory is clear up to the moment of
+the collision.
+
+MR. WEE: In your police statement on 9 January 2025 — the day after the
+accident — you stated: "I don't remember whether the light was green
+or red when I entered the junction." How can you be certain now but not
+the day after?
+PW1: My memory came back. I was still concussed on the 9th. By the time
+I gave the formal statement I was more settled.
+
+MR. WEE: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Lee Cheng Kwong)
+
+MR. WEE: Mr. Lee, describe what happened at the junction.
+DW1: I was turning left from Tampines Avenue 10 into Tampines Avenue 1.
+My light was green with a left-turn green arrow. I had checked the
+junction and did not see any cyclist. I turned. The cyclist appeared
+suddenly from my left, very fast. I braked but could not avoid him.
+It was not my fault — he came out of nowhere.
+
+MR. WEE: Was your indicator on?
+DW1: Yes. Always.
+
+MR. WEE: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP POH: Mr. Lee, in your accident report filed on 8 January 2025 —
+the day of the accident — you stated: "I was making a left turn. I did
+not see the cyclist until the last moment. I may have misjudged the speed
+of the cyclist." You used the words "may have misjudged." Today in court
+you say it was not your fault. Which is correct?
+DW1: "May have" is just an expression. I was in shock when I wrote the report.
+
+DPP POH: In your traffic police interview on 15 January 2025, you stated:
+"I think I was checking my side mirror when I turned." But today you
+say you "checked the junction and did not see any cyclist." Were you
+looking in the mirror or at the junction?
+DW1: I checked both. I looked at the mirror and then at the junction.
+
+DPP POH: LTA traffic camera footage, Exhibit P3, shows the cyclist was
+visible in the junction approach for approximately 2.3 seconds before
+impact. You say you did not see him. Does the footage show you looking
+to your left before the turn?
+DW1: I can't comment on what the camera shows.
+
+DPP POH: The footage does not show a left-head-check by the driver before
+the turn. Your indicator is visible in the footage, so that part of your
+account is confirmed. But the head-check you describe does not appear
+in the footage.
+DW1: I made the check. The camera angle may not capture everything.
+
+DPP POH: No further questions.
+
+COURT: The court notes the following inconsistencies:
+(1) PW1 stated in his day-after police statement that he could not
+remember the light colour; in court he says he is certain it was green.
+He attributes this to recovering memory, which the court will assess.
+(2) The accused's accident report uses the words "may have misjudged"
+but his court testimony asserts no fault whatsoever.
+(3) The accused described checking the junction in court, but told
+police on 15 January that he was checking his mirror at the time of
+the turn. These are inconsistent accounts of where he was looking.
+(4) The LTA footage does not appear to show a head-check, contrary to
+the accused's account.
+
+[HEARING ADJOURNED FOR TRAFFIC EXPERT EVIDENCE ON 3 APRIL 2025]

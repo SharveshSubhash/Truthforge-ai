@@ -1,0 +1,156 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 99/2025
+
+PUBLIC PROSECUTOR v GARY CHEN WEIMING
+
+Date of Hearing: 5 March 2025
+Coram: District Judge Mark Lim Teck Hian
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Fiona Koh Hui Shan
+Counsel for Defence: Mr. Ramesh s/o Nair
+
+CASE SUMMARY:
+The accused is charged under s.506 of the Penal Code for criminal intimidation.
+The complainant, Mr. Julius Pereira, alleges the accused followed him to his
+home and made threatening remarks on the evening of 21 January 2025. The key
+question is whether the accused was at the complainant's residence at the
+material time.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Julius Pereira,
+complainant, 29 years old, software engineer)
+
+DPP KOH: Mr. Julius, what happened on the evening of 21 January 2025?
+PW1: I was walking home from Toa Payoh MRT station. I had finished work
+late. As I turned into my block at Lorong 7 Toa Payoh, I realised
+Gary was following me. He came up to me at the foot of my block and
+said — and I'm quoting — "I know where you live. You better watch
+your back."
+
+DPP KOH: Why would the accused threaten you?
+PW1: We used to be business partners. We had a dispute over a business
+that went badly. He blames me for the losses.
+
+DPP KOH: What time did this incident occur?
+PW1: It was in the evening. Sometime after 8pm. Maybe around 8:30pm.
+I'm not completely sure of the exact time. I had been at the office
+until quite late and I was tired.
+
+DPP KOH: Did you report this to the police?
+PW1: Yes. That same night. But it was much later — maybe around 11pm
+by the time I calmed down and went to the police post.
+
+DPP KOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. RAMESH: Mr. Julius, you said the incident was "around 8:30pm" but
+you are "not completely sure." Could it have been as early as 7:30pm
+or as late as 9:30pm?
+PW1: It was definitely after dark. And I took the train — I usually
+take the 7:55pm train from City Hall if I leave late. So it would
+be at least 8:15pm by the time I got home.
+
+MR. RAMESH: But you're not certain of the exact time?
+PW1: No. But it was after 8pm, I'm confident of that.
+
+MR. RAMESH: You filed your police report at 11pm. That is more than
+two hours after the alleged incident. Why such a long delay?
+PW1: I was shaken. I sat at home for a while before deciding to report it.
+
+MR. RAMESH: Your police report, Exhibit D2, states the incident occurred
+"at about 9pm." But you've told this court "around 8:30pm." Which is
+correct?
+PW1: Around that time. I may have said 9pm to the police because I wasn't
+sure. It was somewhere between 8:30 and 9pm.
+
+MR. RAMESH: So the time could be anywhere in a 30-minute window?
+PW1: Yes. Roughly that window.
+
+MR. RAMESH: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Ms. Goh Siew
+Ching, neighbour of complainant, was at the void deck at the time)
+
+DPP KOH: Ms. Goh, do you know Mr. Julius Pereira?
+PW2: Yes, he lives in my block. I've seen him around.
+
+DPP KOH: Did you see anything at the void deck on the evening of 21 January 2025?
+PW2: Yes. I was at the void deck with my dog. I saw Julius come back
+and there was another man who came up to him and spoke to him
+aggressively. The other man pointed his finger at Julius and Julius
+looked scared. The man then walked off towards Lorong 5.
+
+DPP KOH: What time was this?
+PW2: Hmm. It was in the evening. I usually take my dog out after dinner.
+I eat dinner at about 7:30 or 8pm. So it could have been around
+8:30 or 9pm. I wasn't wearing a watch.
+
+DPP KOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. RAMESH: Ms. Goh, you said it was "around 8:30 or 9pm." That is
+a 30-minute range. Do you have any way to be more precise?
+PW2: Not really. I remember it was dark and the lamps in the void deck
+were on. It was definitely evening, not late night.
+
+MR. RAMESH: You said you take your dog out after dinner. Do you always
+eat at 7:30 to 8pm?
+PW2: More or less. Sometimes later if I'm busy.
+
+MR. RAMESH: So the walk could have been at 9:30pm if you ate late that
+night?
+PW2: I don't think I ate that late that day, but I can't be certain.
+
+MR. RAMESH: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Gary Chen Weiming)
+
+MR. RAMESH: Mr. Gary, where were you on the evening of 21 January 2025?
+DW1: I was at a function dinner at Grand Copthorne Waterfront Hotel.
+It was a client dinner organised by my company. The dinner started
+at 7pm and I left around 9:30pm.
+
+MR. RAMESH: Can you produce evidence of your attendance?
+DW1: Yes. I have the invitation, my name on the attendance list, and my
+Grab receipt showing I was picked up from Grand Copthorne at 9:34pm.
+[Exhibits D5, D6, D7 tendered.]
+
+MR. RAMESH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP KOH: Mr. Gary, Grand Copthorne Waterfront is approximately 8
+kilometres from Toa Payoh. The Grab receipt shows you left at 9:34pm.
+Could you have left the dinner briefly between, say, 8pm and 8:45pm,
+driven to Toa Payoh, and returned?
+DW1: No. I was at the dinner throughout. I have colleagues who can confirm.
+
+DPP KOH: You and Mr. Julius had a serious financial dispute. You have
+motive to threaten him. Do you deny the bad blood between you?
+DW1: We had a dispute, yes. But I did not threaten him. I was at the
+hotel dinner.
+
+DPP KOH: No further questions.
+
+COURT: The court notes that while both PW1 and PW2 agree an incident
+occurred at the void deck of Lorong 7 Toa Payoh, neither witness
+can establish the precise time with certainty. PW1 estimates 8:30–9pm;
+PW2 estimates 8:30–9pm. The accused's Grab receipt places him leaving
+Grand Copthorne at 9:34pm. The critical question is whether the
+incident occurred before or after 9:34pm, and this cannot be resolved
+from the evidence currently before the court without further precision
+on timing. Parties are directed to obtain phone records and hotel CCTV.
+
+[HEARING ADJOURNED TO 10 MARCH 2025]

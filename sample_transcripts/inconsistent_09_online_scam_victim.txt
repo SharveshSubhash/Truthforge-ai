@@ -1,0 +1,143 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 218/2025
+
+PUBLIC PROSECUTOR v TAN ENG HWEE
+
+Date of Hearing: 5 May 2025
+Coram: District Judge Lee Boon Seng
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Alvin Wee Joo Seng
+Counsel for Defence: Ms. Farida binte Wahab
+
+CASE SUMMARY:
+The accused is charged under s.420 of the Penal Code for cheating. It is
+alleged that in August and September 2024, the accused operated an online
+scam posing as a seller of concert tickets, defrauding six victims of
+amounts between $200 and $1,600. The total alleged fraud is $4,800. The
+victims' accounts contain inconsistencies regarding the amounts, dates,
+and platform of contact.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Nur Aishah
+binte Ramlan, victim, 22 years old, student)
+
+DPP WEE: Ms. Aishah, what happened?
+PW1: In August 2024, I saw a Carousell listing for two Taylor Swift concert
+tickets. I paid $800 by PayLah to the seller. The seller then said there
+was an admin fee and asked for another $150. I paid. He then went silent.
+I contacted Carousell and they confirmed the account was fake.
+
+DPP WEE: Total amount lost?
+PW1: $950.
+
+DPP WEE: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MS. FARIDA: Ms. Aishah, your police report, Exhibit D2, states you paid
+a total of $800. Today you say $800 plus $150, totalling $950. Which is
+correct?
+PW1: The report was filed quickly. I forgot to include the admin fee.
+$950 is correct.
+
+MS. FARIDA: The report also says you paid via "bank transfer." Today
+you say "PayLah." Are these different transactions or the same?
+PW1: PayLah is connected to my bank. I transferred via the PayLah app.
+I may have said "bank transfer" to the officer — it's effectively the same.
+
+MS. FARIDA: Do you know for certain the seller was this accused?
+PW1: The police told me the PayLah account received money from multiple
+victims. I identified the account number as the one I sent money to.
+
+MS. FARIDA: But you never met the accused in person?
+PW1: No.
+
+MS. FARIDA: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Mr. Ethan Chan
+Yong Ming, victim, 24 years old, accounts executive)
+
+DPP WEE: Mr. Ethan, what happened to you?
+PW2: I saw a Telegram message in a group selling two Taylor Swift tickets
+for $1,200. I contacted the seller. He said tickets were going fast and
+to PayNow immediately. I transferred $1,200. He then said he needed
+$400 more for insurance to release the tickets. I refused and demanded
+a refund. He disappeared.
+
+DPP WEE: Total amount lost?
+PW2: $1,200.
+
+DPP WEE: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MS. FARIDA: Mr. Ethan, PW1 says she found the seller on Carousell. You
+say you found the seller on Telegram. Are you sure these were the same
+seller?
+PW2: The police connected the PayNow account to the same person. But I
+cannot personally confirm it was the same listing.
+
+MS. FARIDA: The amount PW1 paid — $950 — and your amount — $1,200 —
+and the other four victims allegedly paid different amounts. If this was
+a fixed ticket price, why are all the amounts different?
+PW2: The seller may have quoted different prices to different buyers.
+Concert scalpers do this.
+
+MS. FARIDA: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Tan Eng Hwee)
+
+MS. FARIDA: Mr. Tan, did you sell fake concert tickets?
+DW1: No. I sold my PayNow account and SIM card to a stranger I met at
+a coffee shop in July 2024. I needed money. He paid me $300. I gave
+him my account credentials and the SIM card. Whatever happened after
+that was not my doing.
+
+MS. FARIDA: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP WEE: Mr. Tan, you sold your bank account and SIM card to a stranger
+for $300. Do you know this is an offence under the Payment Services Act?
+DW1: I did not know at the time.
+
+DPP WEE: Can you describe this stranger?
+DW1: Chinese male, maybe 40s, slightly heavy build. I met him once.
+I don't know his name.
+
+DPP WEE: You have no name, no phone number, no description of this buyer?
+DW1: No. It was a cash deal.
+
+DPP WEE: The transaction records from your OCBC account, Exhibit P8,
+show that between the scam period and 15 October 2024, $2,800 was
+transferred from the fraudulent receipts to a second OCBC account also
+registered in your name. Can a stranger who bought your SIM and account
+also access a second account that you never gave them?
+DW1: I... that second account, I also gave to him. I had two accounts.
+
+DPP WEE: This is the first mention of a second account. Your police
+statement and Case for the Defence make no reference to a second account.
+DW1: I forgot about it.
+
+DPP WEE: No further questions.
+
+COURT: The court notes the following:
+(1) Inconsistencies among victims: different platforms (Carousell vs Telegram),
+different amounts, different payment methods — though the prosecution
+ties them to a common account.
+(2) The accused's defence — account sale to a stranger — is undermined
+by the second account transfer, which emerged only in cross-examination.
+(3) PW1's amount ($800 vs $950) and payment method (bank transfer vs PayLah)
+were inconsistent between her police report and court testimony.
+
+[HEARING ADJOURNED FOR FURTHER VICTIM WITNESSES ON 7 MAY 2025]

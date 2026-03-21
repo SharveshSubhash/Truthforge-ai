@@ -1,0 +1,160 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 204/2025
+
+PUBLIC PROSECUTOR v MICHAEL TAN BOON LEONG
+
+Date of Hearing: 28 April 2025
+Coram: District Judge Noor Hafizah binte Rashid
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Goh Pei Shan
+Counsel for Defence: Mr. Kumar s/o Arjunan
+
+CASE SUMMARY:
+The accused is charged under s.325 of the Penal Code for voluntarily causing
+grievous hurt to his wife, Ms. Jennifer Lim Yoke Ling, on 14 December 2024.
+The victim sustained two fractured ribs and bruising. The victim made a police
+report on 15 December 2024 but subsequently provided a recantation statement
+on 3 January 2025. The prosecution is proceeding with the original report
+as a s.147 CPC application to use the original statement as evidence of truth.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Jennifer Lim
+Yoke Ling, victim — testifying as adverse witness per s.156 CPC)
+
+DPP GOH: Ms. Jennifer, on 15 December 2024, you made a police report.
+What did you say happened?
+PW1: I made a report but... I made a mistake. My husband did not
+hurt me. I fell down the stairs. He was not even home.
+
+DPP GOH: I refer you to Exhibit P2 — your police report dated 15 December.
+It states: "My husband Michael hit me in the ribs repeatedly with a
+wooden bat. I was crying and he continued until I could not breathe."
+Did you make this report?
+PW1: I... yes, but I was emotional. I exaggerated. He did push me and
+I fell. That's all.
+
+DPP GOH: Your Exhibit P3 is a video-recorded statement made on 17 December
+to a police officer. In it you describe the attack in detail — you name
+the weapon, you name the location in the flat, and you describe calling
+for help from your daughter. Was that also an exaggeration?
+PW1: [Pause] I was very emotional. I should not have said those things.
+
+DPP GOH: Your Exhibit P3A is a medical report from Tan Tock Seng Hospital
+showing two fractured ribs and contusions. You had fractured ribs.
+Were those caused by a fall on stairs or by repeated blows with a bat?
+PW1: [No answer]
+
+DPP GOH: Did your husband threaten you or pressure you to change your
+account?
+PW1: No. I changed it because it was not accurate.
+
+DPP GOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. KUMAR: Ms. Jennifer, you have clearly changed your account between
+December and January. You are telling the truth today — that it was
+a fall — correct?
+PW1: Yes.
+
+MR. KUMAR: Is it fair to say you were very distressed in December and
+not thinking clearly?
+PW1: Yes.
+
+MR. KUMAR: And you and your husband have now reconciled?
+PW1: We are working things out.
+
+MR. KUMAR: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Dr. Kwok Pei
+Shan, Emergency Medicine Specialist, Tan Tock Seng Hospital)
+
+DPP GOH: Dr. Kwok, you examined the patient on 15 December 2024?
+PW2: Yes. Ms. Jennifer presented with acute pain on the left chest wall.
+X-rays confirmed fractures of the 6th and 7th ribs on the left side.
+She also had contusions — bruises — in the same rib area and on her
+left upper arm.
+
+DPP GOH: Are these injuries consistent with a fall on stairs?
+PW2: A stair fall could theoretically cause rib fractures if the person
+impacts a hard edge. However, multiple rib fractures in the same lateral
+zone combined with upper arm bruising would more commonly result from
+repeated direct strikes. A fall on stairs typically causes more varied
+injury distribution — hands, knees, face.
+
+DPP GOH: What did the patient tell you about how she was injured?
+PW2: She said, and I recorded in my notes: "My husband hit me with
+something. I cannot breathe."
+
+DPP GOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. KUMAR: Dr. Kwok, can you rule out a fall on stairs as the mechanism?
+PW2: I cannot rule it out entirely. But the concentrated left-lateral
+bruising pattern is more consistent with directed impact.
+
+MR. KUMAR: Could the patient have been confused about the cause in the
+emergency room, given her pain?
+PW2: Patients in pain can be confused about some details. But the
+statement "my husband hit me with something" is a fairly specific account.
+
+MR. KUMAR: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Michael Tan Boon Leong)
+
+MR. KUMAR: Mr. Michael, did you assault your wife?
+DW1: No. I was not home. I was at a friend's house in Jurong until
+about 2am. Jennifer fell on the stairs. When I got home at 2:30am she
+was already hurt.
+
+MR. KUMAR: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP GOH: Mr. Michael, your wife told the hospital — immediately after
+the incident — that you hit her. She told the police the same. Her
+video statement gives details only someone present would know. How do
+you explain these detailed false allegations?
+DW1: She was hysterical. We had argued on the phone that evening. She
+was angry at me and blamed me.
+
+DPP GOH: She identified the weapon as a "wooden bat." Does such an object
+exist in your home?
+DW1: We have a cricket bat that our son uses.
+
+DPP GOH: Your daughter, who is 10 years old, gave a brief statement,
+Exhibit P5, in which she says: "Daddy was hitting Mummy with a stick.
+Mummy was crying." Did your daughter fabricate this also?
+DW1: Children can be coached.
+
+DPP GOH: By whom?
+DW1: By whoever the police spoke to.
+
+DPP GOH: No further questions.
+
+COURT: This case presents the classic recantation scenario:
+(1) PW1 made an initial detailed police report and video-recorded
+statement alleging serious assault.
+(2) PW1 subsequently provided a recantation attributed to distress
+and reconciliation with the accused.
+(3) Medical evidence — both the doctor's clinical observation and
+PW1's own words at the hospital — is consistent with the original account.
+(4) A child witness also provided a brief account corroborating the
+original report.
+(5) The accused's explanation that the daughter was "coached" is a
+serious allegation requiring careful evaluation.
+The court will apply s.147 CPC to determine the weight of the original
+statements against the recantation.
+
+[HEARING ADJOURNED FOR CHILD WITNESS TESTIMONY IN CHAMBERS ON 30 APRIL 2025]

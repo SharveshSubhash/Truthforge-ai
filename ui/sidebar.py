@@ -1,0 +1,115 @@
+"""
+TRUTHFORGE AI — Streamlit Sidebar
+Renders model selection and API key inputs.
+Returns a LangGraph config dict.
+"""
+
+from __future__ import annotations
+import os
+import streamlit as st
+from config import CLOUD_MODELS, LOCAL_MODELS, make_langgraph_config
+
+
+def render_sidebar() -> dict:
+    """
+    Render the sidebar and return the LangGraph config dict for the selected model.
+    """
+    with st.sidebar:
+        st.image("https://img.shields.io/badge/TRUTHFORGE-AI-blue?style=for-the-badge", width=200)
+        st.title("TRUTHFORGE AI")
+        st.caption("Legal Transcript Consistency Analyser")
+        st.divider()
+
+        # --- Model Selection ---
+        st.subheader("Model Configuration")
+
+        model_type = st.radio(
+            "Model Type",
+            ["☁️ Cloud Models", "🖥️ Local Models"],
+            horizontal=True,
+        )
+
+        lm_studio_model_name = ""
+
+        if model_type == "☁️ Cloud Models":
+            selected_label = st.selectbox(
+                "Select Cloud Model",
+                list(CLOUD_MODELS.keys()),
+                index=0,
+            )
+
+            # API key input
+            provider = CLOUD_MODELS[selected_label][1]
+            key_map = {
+                "anthropic":    ("ANTHROPIC_API_KEY",    "Anthropic API Key"),
+                "openai":       ("OPENAI_API_KEY",       "OpenAI API Key"),
+                "google_genai": ("GOOGLE_API_KEY",       "Google API Key"),
+            }
+            if provider in key_map:
+                env_key, label = key_map[provider]
+                current = os.getenv(env_key, "")
+                api_key = st.text_input(
+                    label,
+                    value=current,
+                    type="password",
+                    placeholder="sk-... or similar",
+                    help=f"Set {env_key} in your .env file or enter it here.",
+                )
+                if api_key and api_key != current:
+                    os.environ[env_key] = api_key
+
+        else:  # Local Models
+            selected_label = st.selectbox(
+                "Select Local Model",
+                list(LOCAL_MODELS.keys()),
+                index=0,
+            )
+
+            if selected_label == "LM Studio (custom)":
+                lm_studio_model_name = st.text_input(
+                    "LM Studio Model Name",
+                    value=os.getenv("LM_STUDIO_MODEL", "local-model"),
+                    help="Exact model name as shown in LM Studio.",
+                )
+                base_url = st.text_input(
+                    "LM Studio Base URL",
+                    value=os.getenv("LM_STUDIO_BASE_URL", "http://localhost:1234/v1"),
+                )
+                os.environ["LM_STUDIO_BASE_URL"] = base_url
+                os.environ["LM_STUDIO_MODEL"] = lm_studio_model_name
+            else:
+                ollama_url = st.text_input(
+                    "Ollama Base URL",
+                    value=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
+                )
+                os.environ["OLLAMA_BASE_URL"] = ollama_url
+                st.info(
+                    f"Make sure Ollama is running and the model is pulled:\n"
+                    f"`ollama pull {LOCAL_MODELS.get(selected_label, ('?', ''))[0]}`"
+                )
+
+        st.divider()
+
+        # --- Advanced options ---
+        with st.expander("Advanced Options"):
+            langsmith = st.toggle("Enable LangSmith Tracing", value=False)
+            if langsmith:
+                ls_key = st.text_input("LangSmith API Key", type="password")
+                ls_project = st.text_input("LangSmith Project", value="truthforge-ai")
+                if ls_key:
+                    os.environ["LANGCHAIN_API_KEY"] = ls_key
+                    os.environ["LANGCHAIN_TRACING_V2"] = "true"
+                    os.environ["LANGCHAIN_PROJECT"] = ls_project
+
+        st.divider()
+
+        # --- About ---
+        st.caption(
+            "TRUTHFORGE AI | SWE5008 NUS\n"
+            "Multi-agent legal transcript analyser.\n"
+            "For academic use only."
+        )
+
+    # Build LangGraph config from selection
+    config = make_langgraph_config(selected_label, lm_studio_model_name)
+    return config

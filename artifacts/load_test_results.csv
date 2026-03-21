@@ -1,0 +1,11 @@
+run_id,run_num,thread_id,timestamp,transcript_chars,duration_s,status,error,n_inconsistencies,n_entities,success
+70d4a27e,1,session-8b566a066078,2026-03-20T08:12:21.519376+00:00,481,6.078,success,,1,20,True
+8b8902c7,2,session-702d71f7ca33,2026-03-20T08:12:21.550964+00:00,528,0.032,success,,0,19,True
+ad4f2a42,3,session-8740e86a033b,2026-03-20T08:12:21.584507+00:00,539,0.034,success,,1,20,True
+3a9bf111,4,session-99f32663586a,2026-03-20T08:12:21.615395+00:00,450,0.031,success,,0,18,True
+292dd7e3,5,session-7bfe1c19896b,2026-03-20T08:12:21.645001+00:00,470,0.03,success,,1,15,True
+be14f63e,6,session-759f8fed87cd,2026-03-20T08:12:21.674742+00:00,481,0.03,success,,1,20,True
+3badd985,7,session-57775083a91a,2026-03-20T08:12:21.703932+00:00,528,0.029,success,,0,19,True
+9dbb70a4,8,session-46df619a4a9d,2026-03-20T08:12:21.734862+00:00,539,0.031,success,,1,20,True
+35bd7f73,9,session-d1090ad730bb,2026-03-20T08:12:21.761118+00:00,450,0.026,success,,0,18,True
+ca7fcfeb,10,session-378580603754,2026-03-20T08:12:21.789882+00:00,470,0.029,success,,1,15,True

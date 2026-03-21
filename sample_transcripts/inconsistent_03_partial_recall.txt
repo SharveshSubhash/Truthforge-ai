@@ -1,0 +1,161 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 77/2025
+
+PUBLIC PROSECUTOR v LIM SWEE HUAT
+
+Date of Hearing: 17 February 2025
+Coram: District Judge Kenneth Yap Shi Jian
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Samuel Cheah Wei Bin
+Counsel for Defence: Mr. Fadzil bin Rahmat
+
+CASE SUMMARY:
+The accused, a former accounts manager, is charged under s.408 of the Penal
+Code for criminal breach of trust as a servant. It is alleged that over a
+period from January to August 2024, he misappropriated approximately $47,800
+from his employer, Horizon Logistics Pte Ltd, through a series of falsified
+petty cash claims. The hearing focuses on several specific withdrawal transactions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Grace Woo Pei
+Shan, Finance Director, Horizon Logistics Pte Ltd)
+
+DPP CHEAH: Ms. Grace, can you explain the petty cash system at Horizon Logistics?
+PW1: The accounts manager — in this case Mr. Lim — was responsible for
+managing the petty cash float and approving reimbursements up to $500.
+Anything above $500 required a second approver. He had sole access to
+the petty cash box and was the only signatory for amounts under $500.
+
+DPP CHEAH: When did you discover the alleged irregularities?
+PW1: In September 2024, during an internal audit triggered by a routine
+check. The auditor found 23 petty cash vouchers totalling $47,800 that
+were either unsubstantiated or had forged supporting documents — mostly
+taxi receipts and hardware store invoices.
+
+DPP CHEAH: Was Mr. Lim the one who approved these vouchers?
+PW1: Yes. His signature and staff number appear on all 23 vouchers.
+
+DPP CHEAH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. FADZIL: Ms. Grace, were the petty cash vouchers kept in a secure
+location accessible to anyone other than Mr. Lim?
+PW1: The petty cash box was in a cabinet in the finance room. Mr. Lim
+had the key. But the room itself was shared by three finance staff.
+
+MR. FADZIL: So other staff members had access to the finance room but
+not the petty cash box?
+PW1: That's correct.
+
+MR. FADZIL: Could any of those staff members have had a duplicate key
+to the petty cash box without Mr. Lim's knowledge?
+PW1: It is possible in theory, but we have no evidence of that.
+
+MR. FADZIL: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Mr. Ernest Khoo,
+External Auditor, BDO Singapore)
+
+DPP CHEAH: Mr. Ernest, what did you find during the audit?
+PW2: I was engaged to conduct a forensic audit in September 2024. I
+examined 23 petty cash vouchers flagged by the internal audit. Of these,
+11 had supporting receipts that appeared to be photocopies of genuine
+receipts with amounts altered. Eight had receipts from businesses that
+I verified do not exist or have no record of such transactions. Four
+had no supporting documentation at all. The total claimed across
+all 23 was $47,823.50.
+
+DPP CHEAH: Could you determine when these transactions occurred?
+PW2: The voucher dates ranged from 15 January 2024 to 29 August 2024.
+The pattern suggests small claims — mostly between $800 and $2,500 —
+spread over eight months. This is consistent with a deliberate strategy
+to keep individual amounts low.
+
+DPP CHEAH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. FADZIL: Mr. Ernest, the vouchers bear Mr. Lim's signature. Is it
+possible that someone forged his signature?
+PW2: I am not a handwriting expert. I can only say the signatures appear
+consistent with other samples of Mr. Lim's signature in employment
+records. But I cannot exclude the possibility of forgery.
+
+MR. FADZIL: Did you check whether the forged receipts could have been
+created by someone other than Mr. Lim?
+PW2: I did not have the tools or mandate to determine who specifically
+created the documents. My findings identify the anomalies; the
+question of authorship is a separate forensic matter.
+
+MR. FADZIL: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Lim Swee Huat)
+
+MR. FADZIL: Mr. Lim, did you falsify these petty cash vouchers?
+DW1: No. I approved legitimate petty cash claims. Some of them — I will
+admit — I may not have been as rigorous in checking the supporting
+documents as I should have been. But I did not fabricate anything.
+
+MR. FADZIL: Do you have any explanation for why 23 vouchers bear your
+signature and appear falsified?
+DW1: I believe it was another staff member. A colleague named Brandon —
+Brandon Seet — he had approached me before about personal financial
+difficulties. I recall now that on a few occasions, maybe three or
+four times, he asked me to approve claims urgently and I signed
+without checking closely because I trusted him.
+
+MR. FADZIL: When did you recall this?
+DW1: It came back to me when I reviewed the vouchers in preparation
+for this case.
+
+MR. FADZIL: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP CHEAH: Mr. Lim, your defence is that a colleague named Brandon Seet
+deceived you. When was the first time you mentioned Brandon Seet's name
+in connection with this matter?
+DW1: In my second statement to the police.
+
+DPP CHEAH: Your first statement to the police, given on 4 September 2024,
+makes no mention of Brandon Seet at all. You only introduced this name
+in a statement given six weeks later on 16 October 2024. Why?
+DW1: I needed time to think and piece things together.
+
+DPP CHEAH: Brandon Seet left Horizon Logistics in June 2024 — two months
+before the last falsified voucher was dated 29 August 2024. If he was
+responsible, how did he create a voucher two months after leaving?
+DW1: Perhaps he had prepared them in advance before leaving.
+
+DPP CHEAH: Did you attend any hardware store or take any taxi journeys
+that could account for any of the 23 claims?
+DW1: Some of them may have been legitimate expenses. I can't remember all
+of them now — it was months ago.
+
+DPP CHEAH: You approved 23 claims totalling $47,823. You cannot recall
+a single specific occasion or purpose?
+DW1: I approve many claims in a month. I don't remember the details of
+every one.
+
+DPP CHEAH: No further questions.
+
+COURT: The court notes the following inconsistency in the accused's
+evidence: (1) Brandon Seet's name does not appear in the first
+police statement and was introduced only six weeks later;
+(2) The accused's explanation does not account for vouchers dated
+after Seet's departure. The accused further states he cannot recall
+any specific transaction from 23 claims totalling nearly $48,000.
+The court will take this into account in assessing credibility.
+
+[HEARING ADJOURNED FOR FURTHER EVIDENCE ON 20 FEBRUARY 2025]

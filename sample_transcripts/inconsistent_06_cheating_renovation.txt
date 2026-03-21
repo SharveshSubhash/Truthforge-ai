@@ -1,0 +1,126 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 144/2025
+
+PUBLIC PROSECUTOR v PETER LIM SWEE KEONG
+
+Date of Hearing: 24 March 2025
+Coram: District Judge Yang Shihui
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Rachel Teo Xin Yi
+Counsel for Defence: Mr. Daniel Chua Eng Huat
+
+CASE SUMMARY:
+The accused, owner of PL Renovation Works, is charged under s.420 of the
+Penal Code for cheating. It is alleged that between June and August 2024,
+the accused induced four homeowners to make advance payments totalling
+$89,400 for renovation works, then failed to carry out the works and
+disappeared. The accused claims the non-completion was due to a subcontractor
+failure and cost overruns, not dishonest intent.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Tony Chen Bak
+Heng, complainant, 45 years old, engineer)
+
+DPP TEO: Mr. Tony, what happened when you engaged PL Renovation Works?
+PW1: I signed a contract with Mr. Peter Lim in June 2024 for a full
+renovation of my 5-room flat at Sengkang. The contract price was $45,000.
+I paid a 50% deposit of $22,500 on 15 June 2024.
+
+DPP TEO: Was any work done?
+PW1: Initially yes. Some hacking and tiling work started in July. But
+by early August the workers stopped coming. Mr. Lim became uncontactable.
+When I visited the site, the work was barely 20% complete.
+
+DPP TEO: Have you recovered any money?
+PW1: Nothing. I contacted the Consumer Association of Singapore. They
+could not reach Mr. Lim either.
+
+DPP TEO: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. CHUA: Mr. Tony, the contract, Exhibit D2, states payment terms of
+50% on signing and 50% on completion. You paid 50% — $22,500 — as agreed?
+PW1: Yes.
+
+MR. CHUA: And some work was done — you said approximately 20% was
+completed?
+PW1: Some tiles were laid. But the quality was poor. The grout was uneven.
+
+MR. CHUA: You said workers stopped in "early August." Was it the first
+or second week?
+PW1: Somewhere around the 5th to 10th of August. I'm not precise.
+
+MR. CHUA: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Peter Lim Swee Keong)
+
+MR. CHUA: Mr. Peter, what happened to the renovation jobs?
+DW1: I had a subcontractor — Singapore Best Tile Works — who abandoned
+all four jobs simultaneously in August 2024. They had financial difficulties.
+All my materials were already paid for through them. I tried to find
+replacement workers but the cost was too high. I ran out of money.
+
+MR. CHUA: Did you inform the homeowners?
+DW1: I sent WhatsApp messages to all of them in August. I explained the
+situation and offered to refund after I sorted out a claim against the
+subcontractor.
+
+MR. CHUA: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP TEO: Mr. Peter, you said you "sent WhatsApp messages to all of them
+in August." Mr. Tony's phone records, Exhibit P7, show no WhatsApp messages
+from your number after 22 July 2024. Did you send messages to Mr. Tony?
+DW1: I may have called him instead of WhatsApp. Or maybe I messaged from
+a different number.
+
+DPP TEO: What other number?
+DW1: I changed my SIM card around that time. I may have messaged from
+the new number.
+
+DPP TEO: Your new number — what is it?
+DW1: I don't remember it now. I have since changed again.
+
+DPP TEO: Singapore Best Tile Works — did you file a civil claim against
+them as you said you would?
+DW1: I consulted a lawyer. But the cost of the claim was too high.
+
+DPP TEO: You told PW1 you would "sort out a claim against the subcontractor."
+Now you say you consulted a lawyer but found costs too high. Did you
+ever tell the complainants you would not be pursuing the claim?
+DW1: I — things were difficult. I was in financial stress.
+
+DPP TEO: Singapore Best Tile Works' ACRA registration, Exhibit P9, shows
+the company was struck off the register on 30 April 2024 — before your
+contracts with the complainants were even signed in June 2024. How did
+you hire a company that was already struck off?
+DW1: I was not aware they were struck off. I dealt with them informally.
+
+DPP TEO: You signed contracts with four homeowners knowing you had engaged
+a subcontractor that was already dissolved?
+DW1: I did not know.
+
+DPP TEO: No further questions.
+
+COURT: The court notes the following inconsistencies in the accused's
+evidence:
+(1) The accused claims to have informed the complainants via WhatsApp
+in August 2024, but phone records show no such communication with
+PW1 after 22 July 2024. The accused's explanation — a different SIM
+card — is unverifiable.
+(2) The accused's claim to have engaged "Singapore Best Tile Works"
+as a subcontractor in June 2024 is undermined by ACRA records showing
+that company was struck off in April 2024 — two months before the
+contracts were signed.
+(3) The accused's account of why works stopped evolved between his
+police statement and his court testimony.
+
+[HEARING ADJOURNED FOR FURTHER PROSECUTION WITNESSES ON 26 MARCH 2025]

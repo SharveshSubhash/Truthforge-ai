@@ -1,0 +1,124 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 119/2025
+
+PUBLIC PROSECUTOR v LOW CHIN SIONG
+
+Date of Hearing: 6 March 2025
+Coram: District Judge Tan Cheng Han
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Clara Ang Hwee Lin
+Counsel for Defence: Mr. James Raj s/o Arumugam
+
+CASE SUMMARY:
+The accused is charged under s.354(1) of the Penal Code for outrage of modesty.
+It is alleged that on 21 January 2025, on an SMRT North-South Line train
+between Ang Mo Kio and Bishan stations, the accused used his hand to touch
+the buttocks of the complainant, Ms. Ho Jia Ying. The accused denies the
+allegation, claiming he was not on the train at the stated time.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Ho Jia Ying,
+victim, 23 years old, university student)
+
+DPP ANG: Ms. Ho, what happened on 21 January 2025?
+PW1: I was taking the train from Ang Mo Kio to Bishan after dinner
+with friends. The train was very crowded — it was around 9:15pm,
+peak hour returning traffic. I was standing holding the pole. I felt
+a hand touch my buttocks from behind. It was deliberate — not an
+accidental brush. I turned around and the man behind me was looking
+away. I took a photo of him on my phone discreetly. At Bishan I
+alerted the SMRT staff.
+
+DPP ANG: What was he wearing?
+PW1: A dark green collared shirt. Short sleeves. Dark trousers.
+He looked to be in his forties or fifties.
+
+DPP ANG: Where exactly were you touched?
+PW1: On the right side of my buttocks, from behind.
+
+DPP ANG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MR. RAJ: Ms. Ho, in your police statement made on the same night,
+Exhibit D2, you described the touch as being on your "left buttock."
+Today you say "right side." Which is correct?
+PW1: I was confused about directions. I was facing forward and he
+was behind me. Looking back, it was my right side — which from his
+perspective may have been on his left. I may have mixed up the
+perspective.
+
+MR. RAJ: The shirt — in your police statement you described "a dark
+blue collared shirt." In court today you say "dark green." Which is correct?
+PW1: I said dark — it was a dark colour. Under the train lighting it
+could look blue or green. I'm not certain of the exact shade.
+
+MR. RAJ: The photo you took on your phone — Exhibit P4 — shows a man
+wearing what appears to be a dark shirt. Is this the accused?
+PW1: Yes. That is the man.
+
+MR. RAJ: The man in the photo is not in a collared shirt. He appears
+to be wearing a T-shirt with a small design on the chest. Would you
+agree?
+PW1: Looking at the photo again... it may have been a T-shirt. I
+thought it had a collar.
+
+MR. RAJ: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Inspector Jenny
+Tan Suan Li, Transport Police, SMRT)
+
+DPP ANG: Inspector Tan, what CCTV evidence was reviewed?
+PW2: SMRT CCTV footage from the train carriage was reviewed. The relevant
+train — Train 305 on the North-South Line — was identified. The footage
+shows the complainant standing at the pole. At the timestamp 21:17:42,
+a man standing immediately behind the complainant makes a downward hand
+movement in the direction of the complainant's lower body. The footage
+is of limited resolution, but the movement is visible.
+
+DPP ANG: Is the person shown in the CCTV identifiable?
+PW2: Partially. We can confirm a dark-coloured shirt. We could not
+read facial features clearly from the CCTV.
+
+DPP ANG: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. RAJ: Inspector Tan, the CCTV timestamp shows 21:17:42. The
+complainant initially stated the incident was "around 9:15pm." Is
+9:17pm consistent with that?
+PW2: That is broadly consistent.
+
+MR. RAJ: The CCTV shows the train was between Ang Mo Kio and Bishan
+at 21:17:42. The journey time is approximately 3 minutes. When did
+the train leave Ang Mo Kio?
+PW2: Train 305 departed Ang Mo Kio at 21:15:09.
+
+MR. RAJ: My client's Stored Value Transit Card record, Exhibit D6,
+shows an entry tap at Toa Payoh MRT at 21:18:44. Toa Payoh is two
+stops north of Ang Mo Kio. If the train was between Ang Mo Kio and
+Bishan at 21:17, the accused could not physically have entered a
+train at Toa Payoh at 21:18. Is that correct?
+PW2: Those two timestamps would be physically incompatible, yes.
+
+MR. RAJ: No further questions.
+
+DPP ANG: Your Honour, the Prosecution will need to verify the EZ-Link
+card records, which were disclosed by the defence late. The prosecution
+requests time to examine Exhibit D6 before closing.
+
+COURT: This is granted. The court notes the critical contradiction:
+If the accused's transit card shows an entry tap at Toa Payoh at 21:18,
+and the incident took place on a train between Ang Mo Kio and Bishan
+at 21:17, these two facts cannot both be true.
+Additionally: PW1's description of the shirt changed from "dark blue
+collared" in her statement to "dark green" to "may have been a T-shirt"
+in court. The description of which buttock was touched also changed.
+
+[HEARING ADJOURNED TO 10 MARCH 2025 FOR SMRT CARD AND CCTV VERIFICATION]

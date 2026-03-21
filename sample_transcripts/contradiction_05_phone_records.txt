@@ -1,0 +1,147 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 58/2025
+
+PUBLIC PROSECUTOR v CHEN WEI LIN
+
+Date of Hearing: 22 January 2025
+Coram: District Judge Rashidah bte Harun
+Counsel for Prosecution: Deputy Public Prosecutor Mr. Jason Goh Wee Lin
+Counsel for Defence: Ms. Priya Menon
+
+CASE SUMMARY:
+The accused, a 41-year-old sales manager, is charged under s.506 of the Penal
+Code for criminal intimidation and s.354(1) for outrage of modesty. The complainant,
+a junior colleague Ms. Vivien Loh, alleges the accused sent threatening messages
+and touched her inappropriately at a company event on 15 November 2024. The accused
+denies being in the location alleged at the material time.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Ms. Vivien Loh Shi
+Min, victim, 26 years old, sales executive)
+
+DPP GOH: Ms. Vivien, what happened on the evening of 15 November 2024?
+PW1: It was our company's annual dinner at Swissotel The Stamford, Level
+3 ballroom. After the event, around 9:30pm, I was alone in the hotel
+corridor near the bathrooms. Mr. Chen came up to me. He grabbed my
+wrist. He said — I remember clearly — "If you tell anyone about the
+accounts, I'll make sure you regret it." Then he touched my waist and
+moved his hand upward. I pushed him away and left.
+
+DPP GOH: Did you report this immediately?
+PW1: I was scared. I texted my best friend that night. I made a police
+report the next morning.
+
+DPP GOH: What did you text your friend?
+PW1: I texted at 10:07pm: "Chen Wei Lin just grabbed me and threatened
+me at the Swissotel event. I'm scared."
+
+DPP GOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW1
+
+MS. MENON: Ms. Vivien, you said this occurred at approximately 9:30pm
+in the corridor near the bathrooms. Are you certain of the location?
+PW1: Yes. The Level 3 corridor near the ladies' toilet.
+
+MS. MENON: Your police report, Exhibit D3, states the incident occurred
+"outside the Grand Ballroom on Level 3." That is not the same location
+as "near the bathrooms." Which is correct?
+PW1: It was outside the ballroom area. The corridor. The bathrooms are
+nearby in that corridor. I meant the same place.
+
+MS. MENON: You sent a WhatsApp message at 10:07pm. Your phone records,
+Exhibit D4, show that at 10:07pm your phone's cell tower connection
+was at Bugis MRT station area — not Stamford Road. How do you explain this?
+PW1: I don't understand how cell tower data works. I was at the hotel.
+
+MS. MENON: Swissotel Stamford is at City Hall, approximately 500 metres
+from Bugis MRT. Is it possible you had already left the hotel by 10:07pm?
+PW1: I may have left around 10pm. It is possible. But the incident
+happened before I left.
+
+MS. MENON: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Ms. Janet Seah Koon
+Yew, friend of complainant)
+
+DPP GOH: Ms. Janet, did you receive a message from Ms. Vivien on the
+night of 15 November 2024?
+PW2: Yes. At 10:07pm she sent me: "Chen Wei Lin just grabbed me and
+threatened me at the Swissotel event. I'm scared." I called her
+immediately and she sounded very distressed.
+
+DPP GOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MS. MENON: Ms. Janet, the message referred to something about "accounts."
+What did you understand that to mean?
+PW2: I didn't ask. She was distressed and I focused on calming her down.
+
+MS. MENON: So you have no independent knowledge of what threat was made
+or why?
+PW2: I only know what Vivien told me.
+
+MS. MENON: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Chen Wei Lin)
+
+MS. MENON: Mr. Chen, where were you at 9:30pm on 15 November 2024?
+DW1: I left the Swissotel event at approximately 9pm. I had an early
+start the next day. I took a taxi from Stamford Road. By 9:30pm I was
+already at home in Clementi.
+
+MS. MENON: Can you prove this?
+DW1: Yes. I have the Grab receipt — Exhibit D5 — showing a booking at
+8:58pm from Stamford Road, arriving Clementi Avenue 2 at 9:33pm. And
+my home building's access card record shows me entering the carpark
+at 9:31pm. Exhibit D6.
+
+MS. MENON: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP GOH: Mr. Chen, the Grab receipt shows a booking at 8:58pm. But you
+stated on your police statement, Exhibit P3, that you left "at about
+9:30pm." Now you say 8:58pm. Which is correct?
+DW1: I misspoke in the police statement. I was confused about the time.
+The Grab receipt is accurate.
+
+DPP GOH: Your police statement was recorded on 18 November 2024 — three
+days after the event. You had the Grab receipt at that time?
+DW1: I had it but I did not think to check it during the interview.
+
+DPP GOH: The hotel event sign-in record, Exhibit P9, shows your exit
+scan at the Level 3 lift lobby at 9:22pm. So you were still on Level 3
+at 9:22pm — not in a taxi at 8:58pm?
+DW1: I — the Grab booking may have been made before I actually got in
+the car. I booked while still going to the exit.
+
+DPP GOH: No further questions.
+
+COURT: The court notes the following contradictions:
+(1) The accused stated in his police statement he left "at about 9:30pm,"
+but now relies on a Grab booking at 8:58pm to claim he was in a taxi
+during the alleged incident.
+(2) The hotel exit scan, Exhibit P9, places the accused on Level 3 at
+9:22pm — inconsistent with a 8:58pm taxi booking.
+(3) PW1's WhatsApp message timestamp and cell tower data suggest she
+may have been near Bugis MRT at 10:07pm, not necessarily still at
+the hotel — but the incident is alleged to have occurred at 9:30pm,
+and the cell tower data does not speak to her location at 9:30pm.
+(4) The precise location of the incident — corridor vs. outside the
+ballroom — was not consistent between PW1's court testimony and
+police report.
+
+[HEARING TO CONTINUE ON 24 JANUARY 2025 WITH HOTEL SECURITY TESTIMONY]

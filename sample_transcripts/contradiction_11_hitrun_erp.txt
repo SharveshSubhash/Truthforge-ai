@@ -1,0 +1,132 @@
+DISTRICT COURT OF SINGAPORE
+CRIMINAL CASE NO. DC/CC 167/2025
+
+PUBLIC PROSECUTOR v THOMAS WONG KAH SENG
+
+Date of Hearing: 7 April 2025
+Coram: District Judge Lim Jia Sheng
+Counsel for Prosecution: Deputy Public Prosecutor Ms. Felicia Goh Kian Lin
+Counsel for Defence: Mr. Rajan s/o Ramasamy
+
+CASE SUMMARY:
+The accused is charged under s.84 of the Road Traffic Act for failing to
+render assistance after being involved in an accident causing injury, and
+under s.65B for dangerous driving. On 22 February 2025 at 11:10pm, a vehicle
+registered in the accused's name struck a pedestrian, Mr. Sahil Sharma, 29,
+at the junction of Orchard Road and Paterson Road, and fled the scene.
+Mr. Sharma suffered a broken leg. The accused claims he was not driving
+his vehicle that night.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW1 (First Prosecution Witness — Mr. Sahil Sharma,
+victim, 29 years old, software engineer)
+
+DPP GOH: Mr. Sahil, what happened on 22 February 2025?
+PW1: I was crossing Orchard Road at the pedestrian crossing with the
+green man signal. A car came through the intersection and hit me on
+my left side. I was thrown to the ground. The car slowed briefly
+then accelerated away. I saw the rear of the car as it left — it was
+a silver or grey sedan. I could not get the plate number.
+
+DPP GOH: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF PW2 (Second Prosecution Witness — Sergeant Chan
+Boon Huat, Traffic Police, Investigation Officer)
+
+DPP GOH: Sergeant Chan, how was the vehicle identified?
+PW2: An ERP gantry at Orchard Road — the gantry at the junction of
+Paterson Road — recorded a vehicle passing at 23:10:42 on 22 February 2025.
+The vehicle registration was captured: SFG 4411 J. This vehicle is
+registered to the accused. The LTA camera at the same junction captured
+footage showing the vehicle running a red light and striking the victim.
+
+DPP GOH: Is SFG 4411 J a silver sedan?
+PW2: Yes. A silver Mitsubishi Attrage.
+
+DPP GOH: No further questions.
+
+---
+
+CROSS-EXAMINATION OF PW2
+
+MR. RAJAN: Sergeant Chan, the ERP gantry records the vehicle's plate —
+does it record the driver?
+PW2: No. The gantry captures the plate number and timestamp only.
+
+MR. RAJAN: So the ERP record confirms the vehicle was there, not
+who was driving?
+PW2: That is correct. The LTA camera may show the driver, depending
+on resolution.
+
+MR. RAJAN: What does the LTA camera show?
+PW2: The driver appears to be a male. Facial features are not
+sufficiently clear to make an identification from the camera alone.
+
+MR. RAJAN: No further questions.
+
+---
+
+EXAMINATION-IN-CHIEF OF DW1 (The Accused — Mr. Thomas Wong Kah Seng)
+
+MR. RAJAN: Mr. Thomas, where were you on the night of 22 February 2025?
+DW1: I was at home in Bukit Timah from about 9pm. My wife can confirm.
+My car was not in my possession that night — I had lent it to my
+younger brother, Alvin Wong, for the evening.
+
+MR. RAJAN: When did your brother return the car?
+DW1: He returned it the next morning, 23 February, at about 9am.
+
+MR. RAJAN: Did you know about the accident when he returned the car?
+DW1: No. He said nothing. I only found out when the police contacted me.
+
+MR. RAJAN: No further questions.
+
+---
+
+CROSS-EXAMINATION OF DW1
+
+DPP GOH: Mr. Thomas, when the police first contacted you on 24 February 2025,
+what did you say about the car?
+DW1: I told them I was not driving.
+
+DPP GOH: Your first police statement, Exhibit P5, records you saying:
+"I was driving my car that night but I do not recall an accident." Why
+did you tell the police on 24 February that you were driving — only to
+now say you had lent the car to your brother?
+DW1: I was confused during that interview. The officer was asking me
+quickly. I corrected myself in my second statement.
+
+DPP GOH: Your second statement, Exhibit P6, was recorded on 3 March 2025.
+Between 24 February and 3 March, you say you "corrected yourself."
+Is it not the case that you consulted your brother in that week?
+DW1: I spoke to Alvin, yes. He admitted to me he had been in an accident.
+
+DPP GOH: Your brother has not been charged. Your brother has not come
+forward to the police. No statement has been recorded from him. If your
+account is true, why has Alvin not handed himself in?
+DW1: He is afraid.
+
+DPP GOH: His EZ-Link card records, Exhibit P11, show multiple trips on
+the MRT on the evening of 22 February — his phone pings from Tampines.
+He was not in Orchard Road area.
+DW1: He — he could have taken a taxi to Orchard after.
+
+DPP GOH: No further questions.
+
+COURT: The court notes the following serious contradictions:
+(1) The accused told police on 24 February that he "was driving his car
+that night." He now repudiates this and blames his brother. The original
+admission is highly material.
+(2) The brother (Alvin Wong) has not given a statement to police and
+has not come forward, despite allegedly being responsible for a
+hit-and-run injury.
+(3) The brother's EZ-Link records appear inconsistent with him being in
+the Orchard Road area that evening.
+(4) The gap between the first and second statements — during which the
+accused and his brother spoke — raises questions of fabrication.
+
+[HEARING TO CONTINUE ON 9 APRIL 2025 WITH THE ACCUSED'S WIFE AND
+ATTEMPT TO OBTAIN THE BROTHER'S STATEMENT]
