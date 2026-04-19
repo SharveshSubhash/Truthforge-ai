@@ -230,18 +230,15 @@ truthforge/
 │   ├── sidebar.py                       # Model selector sidebar
 │   ├── upload.py                        # File upload + text extraction
 │   └── results.py                       # 8-tab results display
-├── tests/
-│   ├── fixtures/
-│   │   ├── clean_transcript.txt
-│   │   ├── contradictory_transcript.txt
-│   │   └── injection_transcript.txt
-│   ├── unit/                            # Per-agent unit tests
-│   ├── integration/                     # End-to-end pipeline tests
-│   └── security/                        # Adversarial input tests
-└── reports/
-    ├── full_report.md                   # Complete system report
-    ├── qa_answers.md                    # 12 architecture Q&A
-    └── individual/                      # Per-agent NUS-template reports
+├──tests/
+   ├── fixtures/
+   │   ├── clean_transcript.txt
+   │   ├── contradictory_transcript.txt
+   │   └── injection_transcript.txt
+   ├── unit/                            # Per-agent unit tests
+   ├── integration/                     # End-to-end pipeline tests
+   └── security/                        # Adversarial input tests
+
 ```
 
 ---
