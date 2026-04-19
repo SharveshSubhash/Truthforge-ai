@@ -72,7 +72,7 @@ def _add_legal_patterns(ruler) -> None:
     patterns = [
         # Judges
         {"label": "JUDGE", "pattern": [{"LOWER": {"IN": ["justice", "judge", "hon.", "honourable", "honorable"]}},
-                                        {"POS": "PROPN"}]},
+                                        {"IS_TITLE": True, "OP": "+"}]},
         # Courts
         {"label": "COURT", "pattern": [{"LOWER": {"IN": ["supreme", "high", "district", "subordinate", "state"]}},
                                         {"LOWER": "court"}]},

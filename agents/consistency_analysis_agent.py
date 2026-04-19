@@ -37,6 +37,38 @@ from core.logger import audit, get_logger
 
 logger = get_logger("consistency_analysis_agent")
 
+# ---------------------------------------------------------------------------
+# Agent-specific threat model
+# ---------------------------------------------------------------------------
+# 1. FALSE POSITIVES       — Rule-based heuristics (esp. Rule 2 & 4) may flag
+#                            legitimate variation in testimony as contradictions.
+#                            Mitigation: RULE_CONFIDENCE levels; MEDIUM assigned
+#                            to heuristic rules; human review recommended.
+# 2. HALLUCINATED FINDINGS — LLM may invent inconsistencies not present in the
+#                            transcript. Mitigation: verbatim quote requirement
+#                            in system prompt; Pydantic schema validation.
+# 3. TRANSCRIPT OVERLOAD   — Oversized input can degrade LLM accuracy or cause
+#                            regex DoS on rule-based path. Mitigation: MAX_TRANSCRIPT_CHARS
+#                            cap applied before both LLM and rule-based paths.
+# 4. PROMPT INJECTION      — Adversarial content embedded in transcript may
+#                            attempt to manipulate LLM output. Mitigation:
+#                            structured Pydantic output prevents free-text
+#                            instruction-following; upstream security gate blocks
+#                            flagged transcripts before this agent runs.
+# ---------------------------------------------------------------------------
+
+AGENT_VERSION = "v1.0"
+MAX_TRANSCRIPT_CHARS = 100_000  # Guard against oversized inputs in rule-based path
+
+# Per-rule confidence levels for the rule-based detection path.
+# Reflects how likely each rule is to produce a true positive.
+RULE_CONFIDENCE: dict[str, str] = {
+    "rule_1_location_conflict": "HIGH",       # exact timestamp + different location — unambiguous
+    "rule_2_statement_conflict": "MEDIUM",    # shared-word heuristic — some false-positive risk
+    "rule_3_temporal_impossibility": "HIGH",  # date arithmetic — mathematically verifiable
+    "rule_4_evolving_testimony": "MEDIUM",    # late-appearing name — may be a legitimate witness
+}
+
 
 # ---------------------------------------------------------------------------
 # Pydantic schema for LLM structured output
@@ -54,6 +86,14 @@ class InconsistencyModel(BaseModel):
     event_b_id: Optional[str] = Field(None, description="event_id of second event, if applicable")
     severity: str = Field(description="HIGH (material contradiction), MEDIUM (notable), LOW (minor)")
     explanation: str = Field(description="One sentence explaining the contradiction")
+    confidence: str = Field(
+        default="MEDIUM",
+        description=(
+            "Detection confidence: HIGH = clear verbatim contradiction, "
+            "MEDIUM = notable but alternative explanation possible, "
+            "LOW = minor discrepancy or estimate difference"
+        ),
+    )
 
 
 class ConsistencyReportModel(BaseModel):
@@ -124,6 +164,12 @@ CRITICAL RULES:
 - Do NOT add information not present in the provided transcript.
 - If no inconsistencies are found, return an empty list — do not invent issues.
 - Maintain strict legal neutrality throughout.
+
+FAIRNESS RULES (mandatory):
+- Apply equal scrutiny to prosecution, defence, and all witnesses regardless of which side they support.
+- Do NOT flag inconsistencies based on a person's name, race, ethnicity, gender, religion, or nationality.
+- Use neutral descriptors only: "the witness", "the accused", "the complainant" — not "the victim" or "the perpetrator".
+- Report only factual contradictions between statements — not subjective credibility judgements.
 """
 
 
@@ -156,12 +202,17 @@ class ConsistencyAnalysisAgent:
             dict with 'inconsistencies' and audit log entries
         """
         log_start = audit("consistency_analysis_agent", "start",
+                          agent_version=AGENT_VERSION,
                           timeline_events=len(timeline),
                           statements=len(structured_facts.get("key_statements", [])))
 
         if not timeline and not structured_facts.get("key_statements") and not raw_transcript:
             log_end = audit("consistency_analysis_agent", "complete_empty")
-            return {"inconsistencies": [], "audit_log": [log_start, log_end]}
+            return {"inconsistencies": [], "analysis_notes": "", "audit_log": [log_start, log_end]}
+
+        # Reset per-run LLM metadata fields
+        self._last_analysis_notes = ""
+        self._last_overall_consistency = ""
 
         if llm is not None:
             inconsistencies = self._llm_analyse(timeline, structured_facts, llm, raw_transcript)
@@ -169,8 +220,13 @@ class ConsistencyAnalysisAgent:
             inconsistencies = self._rule_based_analyse(timeline, structured_facts, raw_transcript)
 
         log_end = audit("consistency_analysis_agent", "complete",
-                        inconsistencies_found=len(inconsistencies))
-        return {"inconsistencies": inconsistencies, "audit_log": [log_start, log_end]}
+                        inconsistencies_found=len(inconsistencies),
+                        overall_consistency=self._last_overall_consistency or "rule_based")
+        return {
+            "inconsistencies": inconsistencies,
+            "analysis_notes": self._last_analysis_notes,
+            "audit_log": [log_start, log_end],
+        }
 
     def _llm_analyse(
         self,
@@ -180,6 +236,13 @@ class ConsistencyAnalysisAgent:
         raw_transcript: str = "",
     ) -> list[Inconsistency]:
         """LLM-powered consistency analysis — passes the full raw transcript as primary source."""
+        # Input size guard: cap transcript to prevent token overrun and potential DoS
+        if len(raw_transcript) > MAX_TRANSCRIPT_CHARS:
+            logger.warning(
+                "transcript_truncated_llm | original_chars=%d cap=%d",
+                len(raw_transcript), MAX_TRANSCRIPT_CHARS,
+            )
+            raw_transcript = raw_transcript[:MAX_TRANSCRIPT_CHARS]
         try:
             structured_llm = llm.with_structured_output(ConsistencyReportModel)
 
@@ -209,8 +272,17 @@ class ConsistencyAnalysisAgent:
                 {"role": "system", "content": _SYSTEM_PROMPT},
                 {"role": "user", "content": user_message},
             ])
-            return [
-                Inconsistency(
+            # Log analysis_notes for auditability — overall verdict and LLM-noted limitations
+            logger.info(
+                "llm_analysis_notes",
+                overall_consistency=result.overall_consistency,
+                analysis_notes=result.analysis_notes,
+            )
+            self._last_analysis_notes = result.analysis_notes
+            self._last_overall_consistency = result.overall_consistency
+            output = []
+            for inc in result.inconsistencies:
+                inc_dict = Inconsistency(
                     inconsistency_id=inc.inconsistency_id,
                     type=inc.type,
                     statement_a=inc.statement_a,
@@ -220,8 +292,10 @@ class ConsistencyAnalysisAgent:
                     severity=inc.severity,
                     explanation=inc.explanation,
                 )
-                for inc in result.inconsistencies
-            ]
+                inc_dict["confidence"] = inc.confidence       # LLM-assigned confidence
+                inc_dict["detection_method"] = "llm"          # source traceability
+                output.append(inc_dict)
+            return output
         except Exception as exc:
             logger.error("llm_consistency_failed", error=str(exc))
             return self._rule_based_analyse(timeline, structured_facts, raw_transcript)
@@ -238,16 +312,23 @@ class ConsistencyAnalysisAgent:
           1. Location conflict — same timestamp, different locations
           2. Statement conflict — key_statements that directly contradict each other
           3. Temporal impossibility — person blamed for act after they left
-          4. Evolving testimony — key name/alibi not mentioned until late in transcript
-          5. Same-event time discrepancy — same event assigned different times
+          4. Same-event time discrepancy — same event assigned different times
         """
+        # Input size guard: cap transcript before regex scanning
+        if len(raw_transcript) > MAX_TRANSCRIPT_CHARS:
+            logger.warning(
+                "transcript_truncated_rule_based | original_chars=%d cap=%d",
+                len(raw_transcript), MAX_TRANSCRIPT_CHARS,
+            )
+            raw_transcript = raw_transcript[:MAX_TRANSCRIPT_CHARS]
+
         inconsistencies: list[Inconsistency] = []
         idx = 0
 
-        def _inc(type_, a, b, ea, eb, severity, explanation):
+        def _inc(type_, a, b, ea, eb, severity, explanation, confidence="MEDIUM"):
             nonlocal idx
             idx += 1
-            return Inconsistency(
+            inc = Inconsistency(
                 inconsistency_id=f"INC{str(idx).zfill(3)}",
                 type=type_,
                 statement_a=a,
@@ -257,8 +338,11 @@ class ConsistencyAnalysisAgent:
                 severity=severity,
                 explanation=explanation,
             )
+            inc["confidence"] = confidence          # per-finding confidence score
+            inc["detection_method"] = "rule_based"  # source traceability
+            return inc
 
-        # ── 1. Location conflict at same timestamp ──────────────────────────
+        # ── Rule 1: Location conflict at same timestamp ─────────────────────
         time_groups: dict[str, list[dict]] = {}
         for ev in timeline:
             nt = ev.get("normalized_time") or "unknown"
@@ -275,11 +359,12 @@ class ConsistencyAnalysisAgent:
                     evs[1].get("source_excerpt", evs[1].get("description", "")),
                     evs[0].get("event_id"), evs[1].get("event_id"),
                     "HIGH",
-                    f"At {nt}, events reference conflicting locations: "
+                    f"[Rule 1 — Location Conflict] At {nt}, events reference conflicting locations: "
                     + ", ".join(f"'{l}'" for l in locs),
+                    confidence=RULE_CONFIDENCE["rule_1_location_conflict"],
                 ))
 
-        # ── 2. Statement conflict — scan key_statements for time contradictions ──
+        # ── Rule 2: Statement conflict — scan key_statements for time contradictions ──
         import re
         statements = structured_facts.get("key_statements", [])
         _TIME_RE = re.compile(
@@ -353,11 +438,13 @@ class ConsistencyAnalysisAgent:
                         s1[:300], s2[:300],
                         None, None,
                         "MEDIUM",
-                        f"Two statements share context ({', '.join(list(shared_words)[:3])}) "
+                        f"[Rule 2 — Statement Conflict] Two statements share context "
+                        f"({', '.join(list(shared_words)[:3])}) "
                         f"but reference different times: {t1[0]} vs {t2[0]}.",
+                        confidence=RULE_CONFIDENCE["rule_2_statement_conflict"],
                     ))
 
-        # ── 3. Temporal impossibility — person blamed for act after departure ──
+        # ── Rule 3: Temporal impossibility — person blamed for act after departure ──
         if raw_transcript:
             _MONTH_MAP = {
                 "january": 1, "february": 2, "march": 3, "april": 4,
@@ -417,11 +504,12 @@ class ConsistencyAnalysisAgent:
                             dep_sent, act_sent,
                             None, None,
                             "HIGH",
-                            f"A departure/exit is recorded in "
+                            f"[Rule 3 — Temporal Impossibility] A departure/exit is recorded in "
                             f"{_MONTH_MAP_INV.get(dep_month, dep_month)}/{dep_year}, "
                             f"but a related act is dated "
                             f"{_MONTH_MAP_INV.get(act_month, act_month)}/{act_year} "
                             "— after the departure.",
+                            confidence=RULE_CONFIDENCE["rule_3_temporal_impossibility"],
                         ))
                         flagged_dep.add(dep_sent)
                         break
@@ -436,72 +524,13 @@ class ConsistencyAnalysisAgent:
                             dep_sent, dep_sent,
                             None, None,
                             "HIGH",
-                            f"A single passage records a departure in "
+                            f"[Rule 3 — Temporal Impossibility] A single passage records a departure in "
                             f"{dep_month}/{dep_year} alongside an act in "
                             f"{m2_month}/{m2_year} — a temporal impossibility.",
+                            confidence=RULE_CONFIDENCE["rule_3_temporal_impossibility"],
                         ))
                         flagged_dep.add(dep_sent)
                         break
-
-        # ── 4. Evolving testimony — name appears only in later part of transcript ──
-        if raw_transcript:
-            lines = raw_transcript.splitlines()
-            midpoint = len(lines) // 2
-            first_half  = "\n".join(lines[:midpoint])
-            second_half = "\n".join(lines[midpoint:])
-
-            # Match names like "Brandon Seet" or "Ahmad bin Salleh"
-            _NAME_RE = re.compile(
-                r'\b([A-Z][a-z]{1,20}(?:\s+(?:bin|bte|s/o|d/o|al))?'
-                r'\s+[A-Z][a-z]{1,20})\b'
-            )
-            # Titles / ranks that appear as part of formal witness introductions
-            _RANK_PREFIX = re.compile(
-                r'^(?:Corporal|Sergeant|Sgt|Staff\s+Sergeant|SSgt|Inspector|'
-                r'Insp|Senior\s+Staff\s+Sergeant|Staff|Officer|Detective|'
-                r'Constable|Captain|Lieutenant|Major|Colonel|Dr|Doctor|'
-                r'Professor|Prof|Justice|Judge|Magistrate)\b',
-                re.IGNORECASE,
-            )
-            first_names  = set(_NAME_RE.findall(first_half))
-            second_names = set(_NAME_RE.findall(second_half))
-            # Exclude names that start with a formal rank/title — these are
-            # legitimate witnesses introduced in the second half of the transcript,
-            # not suspicious late-emerging names.
-            late_names   = {
-                n for n in (second_names - first_names)
-                if not _RANK_PREFIX.match(n)
-            }
-
-            # Broader blame/introduction context — includes verb forms
-            blame_context = re.compile(
-                r'\b(?:blam\w*|responsible|did it|ask\w*|told|tell\w*|said|'
-                r'claim\w*|introduc\w*|reveal\w*|discover\w*|'
-                r'approach\w*|approv\w*|named|colleague|friend|'
-                r'gave\s+me|gave\s+him|deceiv\w*|manipulat\w*)\b',
-                re.IGNORECASE,
-            )
-            for name in late_names:
-                name_contexts = [
-                    m.group(0).strip()
-                    for m in re.finditer(
-                        rf'[^.!?\n]*\b{re.escape(name)}\b[^.!?\n]*',
-                        second_half,
-                    )
-                ]
-                for ctx in name_contexts:
-                    if blame_context.search(ctx):
-                        inconsistencies.append(_inc(
-                            "STATEMENT_CONFLICT",
-                            f"'{name}' does not appear anywhere in the first half of the transcript.",
-                            ctx[:400],
-                            None, None,
-                            "MEDIUM",
-                            f"The name '{name}' first appears only in the latter portion "
-                            "of the transcript in a context suggesting blame, attribution, "
-                            "or new introduction — possible evolving testimony.",
-                        ))
-                        break  # one flag per new name
 
         return inconsistencies
 
@@ -552,13 +581,27 @@ def consistency_analysis_node(state: dict, config: Optional[RunnableConfig] = No
     # Signal requires_review if findings are ambiguous and we have an LLM
     requires_review = (llm is None and n_inc > 0 and not is_second_pass)
 
+    # Security: validate inconsistency ID format to catch malformed or injected output
+    import re as _re
+    for inc in result["inconsistencies"]:
+        inc_id = inc.get("inconsistency_id", "")
+        if not _re.match(r'^INC\d{3,}$', inc_id):
+            logger.warning("malformed_inconsistency_id", id=inc_id)
+
+    analysis_notes = result.get("analysis_notes", "")
+    n_llm = sum(1 for i in result["inconsistencies"] if i.get("detection_method") == "llm")
+    n_rule = sum(1 for i in result["inconsistencies"] if i.get("detection_method") == "rule_based")
+    notes_summary = f"{n_inc} inconsistencies ({n_high} HIGH) | llm={n_llm} rule_based={n_rule}"
+    if analysis_notes:
+        notes_summary += f" | {analysis_notes[:100]}"
+
     from core.state import AgentStatus
     status_entry = AgentStatus(
         source_agent="consistency_analysis",
         status="second_pass" if is_second_pass else "complete",
         confidence="HIGH" if llm is not None else "MEDIUM",
         next_action="proceed_to_explainability",
-        notes=f"{n_inc} inconsistencies ({n_high} HIGH)",
+        notes=notes_summary,
     )
 
     return {

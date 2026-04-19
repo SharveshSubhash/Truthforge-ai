@@ -39,26 +39,40 @@ logger = get_logger("security_agent")
 # Injection detection patterns
 # ---------------------------------------------------------------------------
 
+# Patterns that score 0.3 each — ambiguous signals requiring multiple hits to block
 _INJECTION_PATTERNS: list[re.Pattern] = [
     re.compile(p, re.IGNORECASE) for p in [
         r"ignore\s+(all\s+)?(previous|prior|above)\s+(instructions?|prompts?|rules?|context)",
         r"disregard\s+(all\s+)?(previous|prior|above)\s+(instructions?|prompts?|rules?)",
-        r"you\s+are\s+now\s+(a|an|the)\s+\w+",
-        r"act\s+as\s+(if\s+you\s+are|a|an)\s+",
-        r"pretend\s+(you\s+are|to\s+be)\s+",
         r"new\s+(system\s+)?prompt\s*:",
         r"<\s*/?\s*system\s*>",
         r"<\s*/?\s*instructions?\s*>",
+        r"override\s+(your\s+)?(safety|instructions?|guidelines?|restrictions?)",
+        r"bypass\s+(?:\w+\s+){0,2}(?:filter|restriction|safeguard|guideline)",
+        r"forget\s+(everything|all)\s+(you|your)",
+        r"reveal\s+(your\s+)?(system\s+)?prompt",
+    ]
+]
+
+# High-confidence patterns — score 0.6 each, block on a single match.
+# These tokens have no legitimate presence in real legal transcripts.
+_DEFINITIVE_INJECTION_PATTERNS: list[re.Pattern] = [
+    re.compile(p, re.IGNORECASE) for p in [
         r"\[SYSTEM\]",
         r"\[ADMIN\]",
         r"\[DEVELOPER\]",
-        r"DAN\s+mode",
-        r"jailbreak",
-        r"your\s+true\s+(self|purpose|goal|programming)",
-        r"override\s+(your\s+)?(safety|instructions?|guidelines?)",
-        r"bypass\s+(your\s+)?(filter|restriction|safeguard)",
-        r"forget\s+(everything|all)\s+(you|your)",
-        r"reveal\s+(your\s+)?(system\s+)?prompt",
+        r"\bDAN\b",                                # DAN (Do Anything Now) persona attack
+        r"\bjailbreak\b",
+        r"forget\s+everything",                    # "forget everything" alone is definitive
+        r"you\s+have\s+no\s+(rules?|restrictions?|limits?|guidelines?)",
+        r"you\s+are\s+now\s+(?:a|an|the\s+)?\w+", # persona replacement: "you are now DAN/an AI/the system"
+        r"pretend\s+(?:you\s+are|to\s+be)\s+",    # persona pretend: "pretend you are / pretend to be"
+        r"act\s+as\s+if\s+you\s+are\s+",          # persona act-as-if: "act as if you are ..."
+        r"act\s+as\s+(?:a|an)\s+(?:(?:\w+)\s+){0,2}(?:ai|assistant|chatbot|judge|system|model|agent|developer|admin)\b",
+        # persona act-as: "act as a legal judge / an unrestricted AI / a system",
+        # while still targeting imperative prompt-injection phrasing rather than transcript prose.
+        r"emergency\s+(?:override|protocol|mode)", # emergency override — never legitimate in transcripts
+        r"your\s+true\s+(?:self|purpose|goal|programming)", # identity/purpose manipulation
     ]
 ]
 
@@ -67,7 +81,6 @@ _ROLE_CONFUSION: list[re.Pattern] = [
         r"I\s+am\s+(the\s+)?(actual|real|true)\s+system",
         r"I\s+am\s+your\s+(creator|developer|designer)",
         r"this\s+is\s+a\s+(test|simulation)",
-        r"emergency\s+(override|protocol|mode)",
     ]
 ]
 
@@ -115,12 +128,32 @@ _BIAS_PATTERNS: list[re.Pattern] = [
     ]
 ]
 
+# PII detection patterns — Singapore legal document context
+# These are scanned in the OUTPUT gate and redacted before delivery to the user.
+_PII_PATTERNS: list[tuple[re.Pattern, str]] = [
+    # Singapore NRIC / FIN  (e.g. S1234567A, T9876543Z, F0123456P, G1234567X)
+    (re.compile(r"\b[STFG]\d{7}[A-Z]\b"), "NRIC/FIN"),
+    # Passport numbers — generic alphanumeric (6–9 chars, letter-prefixed)
+    (re.compile(r"\b[A-Z]{1,2}\d{6,8}\b"), "PASSPORT"),
+    # Singapore phone numbers  (+65 XXXX XXXX  or  8/9XXXXXXX)
+    (re.compile(r"(\+65[\s\-]?)?(6|8|9)\d{3}[\s\-]?\d{4}\b"), "PHONE"),
+    # Email addresses
+    (re.compile(r"\b[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}\b"), "EMAIL"),
+    # Singapore postal codes (exactly 6 digits, not already part of a longer number)
+    (re.compile(r"(?<!\d)\b\d{6}\b(?!\d)"), "POSTAL_CODE"),
+    # Bank account numbers (DBS/POSB/OCBC/UOB common formats: 3-6-1 or 3-7-1 digit groups)
+    (re.compile(r"\b\d{3}[-\s]\d{6,7}[-\s]\d{1}\b"), "BANK_ACCOUNT"),
+    # Credit / debit card numbers (16 digits, optionally grouped by 4)
+    (re.compile(r"\b(?:\d{4}[\s\-]?){3}\d{4}\b"), "CARD_NUMBER"),
+]
+
 # Security event telemetry category labels
 SEC_EVENT_INJECTION_DETECTED  = "injection_detected"
 SEC_EVENT_INJECTION_ALLOWED   = "suspicious_input_allowed"
 SEC_EVENT_OUTPUT_FILTERED     = "output_filtered"
 SEC_EVENT_BIAS_DETECTED       = "bias_detected"
 SEC_EVENT_NEUTRALITY_VIOLATED = "neutrality_violation"
+SEC_EVENT_PII_DETECTED        = "pii_detected"
 SEC_EVENT_CLEAN_INPUT         = "clean_input"
 SEC_EVENT_CLEAN_OUTPUT        = "clean_output"
 
@@ -169,7 +202,14 @@ class ResponsibleAISecurityAgent:
         flags: list[str] = []
         score = 0.0
 
-        # Step 1: Injection pattern matching
+        # Step 1a: Definitive injection patterns — high-confidence, score 0.6 each
+        for pattern in _DEFINITIVE_INJECTION_PATTERNS:
+            m = pattern.search(text)
+            if m:
+                flags.append(f"definitive_injection: {m.group(0)[:60]}")
+                score += 0.6
+
+        # Step 1b: Ambiguous injection patterns — score 0.3 each, need multiple hits
         for pattern in _INJECTION_PATTERNS:
             m = pattern.search(text)
             if m:
@@ -191,7 +231,7 @@ class ResponsibleAISecurityAgent:
                 score += 0.25
 
         # Step 4: Instruction verb density
-        instruction_verbs = ["ignore", "disregard", "forget", "override", "bypass", "pretend", "act as"]
+        instruction_verbs = ["ignore", "disregard", "forget", "override", "bypass", "pretend"]
         verb_count = sum(1 for v in instruction_verbs if v in text_lower)
         if verb_count >= 3:
             flags.append(f"high_instruction_density: {verb_count} verbs")
@@ -259,7 +299,9 @@ class ResponsibleAISecurityAgent:
                 )
                 _metrics.record_security_event(
                     SEC_EVENT_NEUTRALITY_VIOLATED,
-                    details=m.group(0)[:80],
+                    # Log the rule pattern, not the raw transcript content,
+                    # to prevent sensitive legal text from appearing in the monitoring dashboard.
+                    details=f"pattern={pattern.pattern[:60]}",
                 )
 
         for pattern in _BIAS_PATTERNS:
@@ -272,7 +314,20 @@ class ResponsibleAISecurityAgent:
                 )
                 _metrics.record_security_event(
                     SEC_EVENT_BIAS_DETECTED,
-                    details=m.group(0)[:80],
+                    # Log the rule pattern, not the raw transcript content,
+                    # to prevent sensitive legal text from appearing in the monitoring dashboard.
+                    details=f"pattern={pattern.pattern[:60]}",
+                )
+
+        # PII redaction — replace any detected PII with a labelled placeholder
+        for pattern, pii_label in _PII_PATTERNS:
+            matches = pattern.findall(filtered)
+            if matches:
+                violations.append(f"pii_detected:{pii_label}: {len(matches)} instance(s)")
+                filtered = pattern.sub(f"[{pii_label} REDACTED]", filtered)
+                _metrics.record_security_event(
+                    SEC_EVENT_PII_DETECTED,
+                    details=f"{pii_label} x{len(matches)}",
                 )
 
         audit(

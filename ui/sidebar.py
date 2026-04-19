@@ -12,16 +12,12 @@ from config import CLOUD_MODELS, LOCAL_MODELS, make_langgraph_config
 
 def render_sidebar() -> dict:
     """
-    Render the sidebar and return the LangGraph config dict for the selected model.
+    Render model configuration controls and return the LangGraph config dict.
+    Called inside an expander in main.py — no st.sidebar wrapper here.
     """
-    with st.sidebar:
-        st.image("https://img.shields.io/badge/TRUTHFORGE-AI-blue?style=for-the-badge", width=200)
-        st.title("TRUTHFORGE AI")
-        st.caption("Legal Transcript Consistency Analyser")
-        st.divider()
-
+    if True:  # block retained for minimal diff
         # --- Model Selection ---
-        st.subheader("Model Configuration")
+        st.caption("Select the AI model for transcript analysis.")
 
         model_type = st.radio(
             "Model Type",
@@ -38,7 +34,6 @@ def render_sidebar() -> dict:
                 index=0,
             )
 
-            # API key input
             provider = CLOUD_MODELS[selected_label][1]
             key_map = {
                 "anthropic":    ("ANTHROPIC_API_KEY",    "Anthropic API Key"),
@@ -58,7 +53,7 @@ def render_sidebar() -> dict:
                 if api_key and api_key != current:
                     os.environ[env_key] = api_key
 
-        else:  # Local Models
+        else:
             selected_label = st.selectbox(
                 "Select Local Model",
                 list(LOCAL_MODELS.keys()),
@@ -88,10 +83,7 @@ def render_sidebar() -> dict:
                     f"`ollama pull {LOCAL_MODELS.get(selected_label, ('?', ''))[0]}`"
                 )
 
-        st.divider()
-
-        # --- Advanced options ---
-        with st.expander("Advanced Options"):
+        with st.expander("🔬 Advanced Options", expanded=False):
             langsmith = st.toggle("Enable LangSmith Tracing", value=False)
             if langsmith:
                 ls_key = st.text_input("LangSmith API Key", type="password")
@@ -101,15 +93,7 @@ def render_sidebar() -> dict:
                     os.environ["LANGCHAIN_TRACING_V2"] = "true"
                     os.environ["LANGCHAIN_PROJECT"] = ls_project
 
-        st.divider()
+        st.caption("SWE5008 NUS · For academic use only.")
 
-        # --- About ---
-        st.caption(
-            "TRUTHFORGE AI | SWE5008 NUS\n"
-            "Multi-agent legal transcript analyser.\n"
-            "For academic use only."
-        )
-
-    # Build LangGraph config from selection
     config = make_langgraph_config(selected_label, lm_studio_model_name)
     return config

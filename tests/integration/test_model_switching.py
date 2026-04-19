@@ -43,6 +43,7 @@ def _make_mock_llm():
             )
         ],
         key_statements=["PW1 stated the event occurred at 10:00am"],
+        summary="Mock transcript summary for model switching test.",
     )
 
     # Timeline mock
@@ -78,6 +79,8 @@ def _make_mock_llm():
         explanations=[
             ExplanationModel(
                 inconsistency_id="NO_ISSUES",
+                observe="No conflicting statements were identified in the transcript.",
+                reason="All statements are internally consistent with no temporal or factual conflicts.",
                 plain_english="No inconsistencies were detected in this transcript.",
                 evidence_quotes=[],
                 confidence="HIGH",
