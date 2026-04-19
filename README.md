@@ -11,7 +11,7 @@ A multi-agent AI system that detects factual inconsistencies in legal transcript
 
 ## Features
 
-- **Six specialist agents**: Security Gate, Transcript Processing, Timeline Reconstruction, Consistency Analysis, Explainability, Output Filter
+- **Six specialist agents**: Responsible_AI_Security_Agent, Transcript Processing, Timeline Reconstruction, Consistency Analysis, Explainability, Orchestrator_Agent
 - **Cloud & local model support**: Claude, GPT-4o, Gemini, Llama (Ollama), Mistral (Ollama), LM Studio
 - **Provider-agnostic pipeline**: Switch models from the sidebar without changing any code
 - **Responsible AI**: Aligned with Singapore's Model AI Governance Framework for Agentic AI
