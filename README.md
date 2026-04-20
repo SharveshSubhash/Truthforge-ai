@@ -261,65 +261,118 @@ Every generated report includes:
 
 ---
 ### Continuous Integration and Continuous Deployment Workflow: 
-```mermaid
-%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-      'fontFamily': 'arial, sans-serif',
-      'fontSize': '16px',
-      'clusterFontSize': '20px',
-      'primaryTextColor': '#1a202c',
-      'lineColor': '#4a5568',
-      'edgeLabelBackground': '#ffffff',
-      'clusterBkg': '#f8fafc',
-      'clusterBorder': '#cbd5e1'
-    },
-    'flowchart': {
-      'rankSpacing': 100,
-      'nodeSpacing': 70,
-      'padding': 50
+```graphviz
+digraph CICD_Pipeline {
+    // --------------------------------------------------------
+    // PAGE & LAYOUT SETUP (A4 Size: 8.27 x 11.69 inches)
+    // --------------------------------------------------------
+    size="8.27,11.69";
+    ratio="compress";
+    dpi=300;
+    rankdir=TB;
+    nodesep=0.6;
+    ranksep=0.8;
+    fontname="Helvetica, Arial, sans-serif";
+
+    // Global Styles for Nodes and Arrows
+    // NOTE: margin="0.6,0.25" explicitly makes the boxes wider horizontally
+    node [fontname="Helvetica, Arial, sans-serif", fontsize=14, shape=box, style="rounded,filled", fillcolor="#f8fafc", color="#94a3b8", penwidth=2, margin="0.6,0.25"];
+    edge [fontname="Helvetica, Arial, sans-serif", fontsize=12, color="#4a5568", penwidth=2];
+
+    // --------------------------------------------------------
+    // 1. SOURCE CONTROL
+    // --------------------------------------------------------
+    subgraph cluster_source {
+        label=<<B>1. Source Control</B>>;
+        fontsize=18;
+        style="rounded,filled";
+        fillcolor="#f1f5f9";
+        color="#cbd5e1";
+        
+        Push [label=<<B>Developer Push / PR</B>>];
+        Repo [label=<<B>GitHub Repository</B>>];
+        
+        Push -> Repo;
     }
-  }
-}%%
-graph TD
-    %% Styling classes optimized for A4 reading (bold, larger fonts, thicker borders)
-    classDef secure fill:#e8f4f8,stroke:#2b6cb0,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:16px,rx:8,ry:8;
-    classDef process fill:#f7fafc,stroke:#4a5568,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:16px,rx:8,ry:8;
-    classDef deploy fill:#f0fff4,stroke:#38a169,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:16px,rx:8,ry:8;
-    classDef observe fill:#fffaf0,stroke:#dd6b20,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:16px,rx:8,ry:8;
 
-    subgraph "<b>1. Source Control</b>"
-        A[Developer Push / PR] --> B(GitHub Repository)
-        class A,B process
-    end
+    // --------------------------------------------------------
+    // 2. CONTINUOUS INTEGRATION
+    // --------------------------------------------------------
+    subgraph cluster_ci {
+        label=<<B>2. Continuous Integration (GitHub Actions)</B>>;
+        fontsize=18;
+        style="rounded,filled";
+        fillcolor="#e0f2fe";
+        color="#7dd3fc";
+        
+        Trigger [label=<<B>Trigger CI Pipeline</B>>, shape=hexagon, fillcolor="#bae6fd", color="#0284c7"];
+        SecTests [label=<<B>Security Tests</B><BR/>(Injection, PII, Bias)>, fillcolor="#f0f9ff", color="#0369a1"];
+        UnitTests [label=<<B>Unit Tests</B><BR/>(Deterministic Fallback Mode)>, fillcolor="#f0f9ff", color="#0369a1"];
+        IntTests [label=<<B>Integration Tests</B><BR/>(E2E LangGraph &amp; LLM Paths)>, fillcolor="#f0f9ff", color="#0369a1"];
 
-    subgraph "<b>2. Continuous Integration (GitHub Actions)</b>"
-        B --> C{Trigger CI Pipeline}
-        C --> D[Security Tests <br/> Injection, PII, Bias]
-        D -->|Gate 1: Pass| E[Unit Tests <br/> Deterministic Fallback Mode]
-        E -->|Gate 2: Pass| F[Integration Tests <br/> E2E LangGraph & LLM Paths]
-        class C,D,E,F secure
-    end
+        Trigger -> SecTests;
+        SecTests -> UnitTests [label=<<B> Gate 1: Pass </B>>];
+        UnitTests -> IntTests [label=<<B> Gate 2: Pass </B>>];
+    }
 
-    subgraph "<b>3. Continuous Deployment (CD)</b>"
-        F -->|Gate 3: Merge to Main| G[Build Docker Image]
-        G --> H[(GitHub Container Registry<br/>GHCR)]
-        class G,H process
-    end
+    // --------------------------------------------------------
+    // 3. CONTINUOUS DEPLOYMENT
+    // --------------------------------------------------------
+    subgraph cluster_cd {
+        label=<<B>3. Continuous Deployment (CD)</B>>;
+        fontsize=18;
+        style="rounded,filled";
+        fillcolor="#dcfce7";
+        color="#86efac";
+        
+        Build [label=<<B>Build Docker Image</B>>, fillcolor="#f0fdf4", color="#15803d"];
+        GHCR [label=<<B>GitHub Container Registry (GHCR)</B>>, shape=cylinder, fillcolor="#f0fdf4", color="#15803d"];
+        
+        Build -> GHCR;
+    }
 
-    subgraph "<b>4. Production Environment</b>"
-        H --> I[Deploy to Host Server]
-        I --> J[Automated Smoke Tests]
-        class I,J deploy
-    end
+    // --------------------------------------------------------
+    // 4. PRODUCTION ENVIRONMENT
+    // --------------------------------------------------------
+    subgraph cluster_prod {
+        label=<<B>4. Production Environment</B>>;
+        fontsize=18;
+        style="rounded,filled";
+        fillcolor="#fef9c3";
+        color="#fde047";
+        
+        Deploy [label=<<B>Deploy to Host Server</B>>, fillcolor="#fefce8", color="#a16207"];
+        Smoke [label=<<B>Automated Smoke Tests</B>>, fillcolor="#fefce8", color="#a16207"];
+        
+        Deploy -> Smoke;
+    }
 
-    subgraph "<b>5. LLMSecOps & Observability</b>"
-        J --> K((Live Agentic Application))
-        K -->|Graph Transitions| L[TruthForgeState Logging <br/> Immutable Audit Trail]
-        K -->|Token Usage & Latency| M[LangSmith Monitoring <br/> Trace Visibility]
-        class K,L,M observe
-    end
+    // --------------------------------------------------------
+    // 5. OBSERVABILITY
+    // --------------------------------------------------------
+    subgraph cluster_obs {
+        label=<<B>5. LLMSecOps &amp; Observability</B>>;
+        fontsize=18;
+        style="rounded,filled";
+        fillcolor="#ffedd5";
+        color="#fdba74";
+        
+        Live [label=<<B>Live Agentic Application</B>>, shape=ellipse, fillcolor="#fff7ed", color="#c2410c"];
+        Log [label=<<B>TruthForgeState Logging</B><BR/>(Immutable Audit Trail)>, fillcolor="#fff7ed", color="#c2410c"];
+        Mon [label=<<B>LangSmith Monitoring</B><BR/>(Trace Visibility)>, fillcolor="#fff7ed", color="#c2410c"];
+
+        Live -> Log [label=<<B> Graph Transitions </B>>];
+        Live -> Mon [label=<<B> Token Usage &amp; Latency </B>>];
+    }
+
+    // --------------------------------------------------------
+    // CROSS-CLUSTER CONNECTIONS
+    // --------------------------------------------------------
+    Repo -> Trigger;
+    IntTests -> Build [label=<<B> Gate 3: Merge to Main </B>>];
+    GHCR -> Deploy;
+    Smoke -> Live;
+}
 ```
 ---
 ## LangSmith Monitoring (Optional)
