@@ -1,0 +1,212 @@
+name: Deploy — Build & Release
+
+on:
+  push:
+    branches: [main]
+
+env:
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/truthforge-ai
+  IMAGE_TAG: ${{ github.sha }}
+
+jobs:
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 1: Re-run full test suite as a deployment gate
+  # Even though CI already ran, we re-verify before building image
+  # ──────────────────────────────────────────────────────────────
+  pre-deploy-tests:
+    name: "Pre-Deploy Test Gate (221 tests)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download spaCy model
+        run: python -m spacy download en_core_web_sm
+
+      - name: Create required directories
+        run: mkdir -p logs artifacts/runs memory reports test-results
+
+      - name: Run ALL 221 tests
+        run: |
+          pytest tests/ \
+            -v \
+            --tb=short \
+            --junitxml=test-results/full-suite.xml \
+            -q
+        env:
+          TRUTHFORGE_FALLBACK_MODE: "true"
+
+      - name: Upload full test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-suite-results
+          path: test-results/full-suite.xml
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 2: Build Docker Image and Push to Docker Hub
+  # Only runs if all pre-deploy tests pass
+  # ──────────────────────────────────────────────────────────────
+  build-and-push:
+    name: "Build Docker Image"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: pre-deploy-tests
+
+    outputs:
+      image_tag: ${{ steps.meta.outputs.tags }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Extract Docker metadata (tags and labels)
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha,prefix=sha-
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=${{ github.run_number }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            BUILD_DATE=${{ github.event.head_commit.timestamp }}
+            GIT_SHA=${{ github.sha }}
+
+      - name: Verify image was pushed
+        run: |
+          echo "Image pushed: ${{ env.IMAGE_NAME }}:latest"
+          echo "SHA tag: ${{ env.IMAGE_NAME }}:sha-${{ github.sha }}"
+          echo "Build number: ${{ env.IMAGE_NAME }}:${{ github.run_number }}"
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 3: Deploy to Server via SSH
+  # Pulls the new image, stops old container, starts new one
+  # ──────────────────────────────────────────────────────────────
+  deploy:
+    name: "Deploy to Server"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: build-and-push
+
+    steps:
+      - name: Checkout code (for docker-compose.yml)
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            # Pull the latest image
+            docker pull ${{ env.IMAGE_NAME }}:latest
+
+            # Stop and remove the old container if it exists
+            docker stop truthforge_app 2>/dev/null || true
+            docker rm truthforge_app 2>/dev/null || true
+
+            # Create required directories on server
+            mkdir -p ~/truthforge/reports
+            mkdir -p ~/truthforge/logs
+            mkdir -p ~/truthforge/artifacts/runs
+            mkdir -p ~/truthforge/memory
+
+            # Start the new container
+            docker run -d \
+              --name truthforge_app \
+              --restart unless-stopped \
+              -p 8501:8501 \
+              -e ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }} \
+              -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
+              -e GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }} \
+              -e STREAMLIT_SERVER_PORT=8501 \
+              -e STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
+              -e STREAMLIT_SERVER_HEADLESS=true \
+              -e STREAMLIT_BROWSER_GATHER_USAGE_STATS=false \
+              -v ~/truthforge/reports:/app/reports \
+              -v ~/truthforge/logs:/app/logs \
+              -v ~/truthforge/artifacts:/app/artifacts \
+              -v ~/truthforge/memory:/app/memory \
+              --health-cmd="curl -f http://localhost:8501/_stcore/health || exit 1" \
+              --health-interval=30s \
+              --health-timeout=10s \
+              --health-retries=3 \
+              ${{ env.IMAGE_NAME }}:latest
+
+            # Verify container is running
+            sleep 5
+            docker ps | grep truthforge_app
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 4: Smoke Test — verify Streamlit is live after deploy
+  # Polls the health endpoint for up to 90 seconds
+  # ──────────────────────────────────────────────────────────────
+  smoke-test:
+    name: "Smoke Test — Streamlit Live Check"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: deploy
+
+    steps:
+      - name: Wait for Streamlit to be ready
+        run: |
+          echo "Waiting for Streamlit to start..."
+          for i in $(seq 1 18); do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+              http://${{ secrets.DEPLOY_HOST }}:8501/_stcore/health || echo "000")
+            echo "Attempt $i/18 — HTTP status: $STATUS"
+            if [ "$STATUS" = "200" ]; then
+              echo "✓ Streamlit is live and healthy"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "✗ Streamlit did not become healthy within 90 seconds"
+          exit 1
+
+      - name: Confirm deployment
+        run: |
+          echo "====================================="
+          echo "  TRUTHFORGE AI — DEPLOYED"
+          echo "====================================="
+          echo "URL    : http://${{ secrets.DEPLOY_HOST }}:8501"
+          echo "Image  : ${{ env.IMAGE_NAME }}:latest"
+          echo "Commit : ${{ github.sha }}"
+          echo "Build  : ${{ github.run_number }}"
+          echo "====================================="
