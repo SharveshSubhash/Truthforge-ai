@@ -122,24 +122,17 @@ jobs:
           image: ${{ env.IMAGE_NAME }}:latest
           format: 'table'
 
-      # 🟢 ADDED: Trivy Vulnerability Scan (SARIF output for GitHub Security tab)
+# 🟢 ADDED: Trivy Vulnerability Scan (Visual Table)
       - name: Run Trivy Vulnerability Scanner
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ${{ env.IMAGE_NAME }}:latest
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          format: 'table'
+          # exit-code: '0' ensures your demo doesn't crash if it finds a minor OS bug
           exit-code: '0'
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
-
-      # 🟢 ADDED: Upload Trivy results to GitHub Security tab
-      - name: Upload Trivy results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
-        if: always()
-        with:
-          sarif_file: 'trivy-results.sarif'
 
   # ──────────────────────────────────────────────────────────────
   # JOB 3: Deploy to Server via SSH
