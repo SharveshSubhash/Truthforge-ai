@@ -342,7 +342,7 @@ When enabled, every pipeline run generates a LangSmith trace with per-node laten
 - **Complex temporal chains**: Multi-step relative time expressions may not resolve correctly
 
 ---
-"Adding this comment to test the complete GitHUb Action based Testing workflow functionality test properly."
+"Adding this comment to CHECK THE DOCKER IMAGE CREATION AND DOCKER DEPLOYMENT"
 ## License
 
 For academic use only. NUS SWE5008 course project.
