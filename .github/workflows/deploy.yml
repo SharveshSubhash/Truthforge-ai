@@ -7,6 +7,7 @@ on:
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/truthforge-ai
   IMAGE_TAG: ${{ github.sha }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
 
