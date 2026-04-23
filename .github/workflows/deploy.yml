@@ -92,7 +92,7 @@ jobs:
         with:
           images: ${{ env.IMAGE_NAME }}
           tags: |
-            type=sha,prefix=sha-
+            type=sha,prefix=sha-${{ github.sha }}
             type=raw,value=${{ github.run_number }}
 
       - name: Build and push Docker image
