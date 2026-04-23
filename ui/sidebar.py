@@ -3,7 +3,6 @@ TRUTHFORGE AI — Streamlit Sidebar
 Renders model selection and API key inputs.
 Returns a LangGraph config dict.
 """
-
 from __future__ import annotations
 import os
 import streamlit as st
@@ -18,22 +17,18 @@ def render_sidebar() -> dict:
     if True:  # block retained for minimal diff
         # --- Model Selection ---
         st.caption("Select the AI model for transcript analysis.")
-
         model_type = st.radio(
             "Model Type",
             ["☁️ Cloud Models", "🖥️ Local Models"],
             horizontal=True,
         )
-
         lm_studio_model_name = ""
-
         if model_type == "☁️ Cloud Models":
             selected_label = st.selectbox(
                 "Select Cloud Model",
                 list(CLOUD_MODELS.keys()),
                 index=0,
             )
-
             provider = CLOUD_MODELS[selected_label][1]
             key_map = {
                 "anthropic":    ("ANTHROPIC_API_KEY",    "Anthropic API Key"),
@@ -43,15 +38,31 @@ def render_sidebar() -> dict:
             if provider in key_map:
                 env_key, label = key_map[provider]
                 current = os.getenv(env_key, "")
-                api_key = st.text_input(
-                    label,
-                    value=current,
-                    type="password",
-                    placeholder="sk-... or similar",
-                    help=f"Set {env_key} in your .env file or enter it here.",
-                )
-                if api_key and api_key != current:
-                    os.environ[env_key] = api_key
+
+                if current:
+                    # Key is already set via environment — show confirmation, never expose it
+                    st.success(f"✅ {label} configured", icon="🔑")
+                    # Still allow override if user wants to use their own key
+                    override = st.text_input(
+                        f"Override {label} (optional)",
+                        value="",
+                        type="password",
+                        placeholder="Leave blank to use server key",
+                        help=f"A server-side {env_key} is already set. Only fill this to use a different key.",
+                    )
+                    if override:
+                        os.environ[env_key] = override
+                else:
+                    # No env key set — user must provide one
+                    api_key = st.text_input(
+                        label,
+                        value="",
+                        type="password",
+                        placeholder="sk-... or similar",
+                        help=f"Set {env_key} in your .env file or enter it here.",
+                    )
+                    if api_key:
+                        os.environ[env_key] = api_key
 
         else:
             selected_label = st.selectbox(
@@ -59,7 +70,6 @@ def render_sidebar() -> dict:
                 list(LOCAL_MODELS.keys()),
                 index=0,
             )
-
             if selected_label == "LM Studio (custom)":
                 lm_studio_model_name = st.text_input(
                     "LM Studio Model Name",
