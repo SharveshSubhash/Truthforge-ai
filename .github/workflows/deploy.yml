@@ -92,7 +92,6 @@ jobs:
           images: ${{ env.IMAGE_NAME }}
           tags: |
             type=sha,prefix=sha-
-            type=raw,value=latest,enable={{is_default_branch}}
             type=raw,value=${{ github.run_number }}
 
       - name: Build and push Docker image
@@ -156,7 +155,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             # Pull the latest image
-            docker pull ${{ env.IMAGE_NAME }}:latest
+            docker pull ${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
 
             # Stop and remove the old container if it exists
             docker stop truthforge_app 2>/dev/null || true
@@ -188,7 +187,7 @@ jobs:
               --health-interval=30s \
               --health-timeout=10s \
               --health-retries=3 \
-              ${{ env.IMAGE_NAME }}:latest
+              ${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
 
             # Verify container is running
             sleep 5
