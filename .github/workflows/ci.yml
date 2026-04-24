@@ -217,13 +217,145 @@ jobs:
           path: test-results/integration-*.xml
 
   # ──────────────────────────────────────────────────────────────
-  # JOB 4: Full Test Summary Report
+  # JOB 4: Trajectory Structural Tests (runs after integration tests)
+  # Covers: graph node order, pipeline completeness, blocked paths (8 tests)
+  # Files:  tests/test_agent_trajectory.py
+  # NO API KEY NEEDED — uses graph_trajectory_strict_match and
+  # unordered match only. TRUTHFORGE_FALLBACK_MODE=true skips LLM evals.
+  # These MUST pass before merging — validates LangGraph node sequence.
+  # ──────────────────────────────────────────────────────────────
+  trajectory-structural-tests:
+    name: "Trajectory Structural Tests (8)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: integration-tests       # only runs if integration tests pass
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install agentevals langchain-anthropic
+
+      - name: Download spaCy model
+        run: python -m spacy download en_core_web_sm
+
+      - name: Create required directories
+        run: mkdir -p logs artifacts/runs memory reports test-results
+
+      - name: Run trajectory structural tests
+        # TRUTHFORGE_FALLBACK_MODE=true ensures LLM-as-judge tests are
+        # skipped — only graph_trajectory_strict_match and unordered
+        # match tests run. Zero API cost.
+        run: |
+          pytest tests/test_agent_trajectory.py \
+            -v --tb=short \
+            -k "TestGraphTrajectoryStrictMatch or TestTrajectoryUnorderedMatch" \
+            --junitxml=test-results/trajectory-structural.xml
+        env:
+          TRUTHFORGE_FALLBACK_MODE: "true"
+
+      - name: Upload trajectory structural test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trajectory-structural-results
+          path: test-results/trajectory-structural.xml
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 5: Trajectory LLM-as-Judge Tests (optional — skipped if no key)
+  # Covers: reasoning quality of pipeline trajectory (4 tests)
+  # Files:  tests/test_agent_trajectory.py
+  # Requires at least one of: ANTHROPIC_API_KEY, OPENAI_API_KEY, GOOGLE_API_KEY
+  # Does NOT block merge — runs in parallel with structural tests.
+  # Results are informational only (continue-on-error: true).
+  # ──────────────────────────────────────────────────────────────
+  trajectory-llm-eval:
+    name: "Trajectory LLM-as-Judge (optional)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: integration-tests       # runs in parallel with structural tests
+    continue-on-error: true        # never blocks merge — informational only
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install agentevals langchain-anthropic langchain-openai langchain-google-genai
+
+      - name: Download spaCy model
+        run: python -m spacy download en_core_web_sm
+
+      - name: Create required directories
+        run: mkdir -p logs artifacts/runs memory reports test-results
+
+      - name: Check which judge model will be used
+        run: |
+          echo "Detecting available API key for judge model..."
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            echo "Judge: anthropic:claude-sonnet-4-20250514"
+          elif [ -n "$OPENAI_API_KEY" ]; then
+            echo "Judge: openai:gpt-4o"
+          elif [ -n "$GOOGLE_API_KEY" ]; then
+            echo "Judge: google_genai:gemini-2.0-flash"
+          else
+            echo "No API key found — LLM eval tests will be skipped automatically."
+          fi
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Run trajectory LLM-as-judge tests
+        # Tests auto-skip if no API key is present (see _resolve_judge_model())
+        # TRUTHFORGE_FALLBACK_MODE is NOT set here so LLM tests can run
+        run: |
+          pytest tests/test_agent_trajectory.py \
+            -v --tb=short \
+            -k "TestTrajectoryLLMJudge" \
+            --junitxml=test-results/trajectory-llm-eval.xml
+        env:
+          TRUTHFORGE_FALLBACK_MODE: "false"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Upload LLM eval results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trajectory-llm-eval-results
+          path: test-results/trajectory-llm-eval.xml
+
+  # ──────────────────────────────────────────────────────────────
+  # JOB 6: Full Test Summary Report
   # Runs even if some tests fail so you always see the full picture
+  # Updated to include trajectory structural tests in the gate.
+  # LLM eval is excluded from the gate (continue-on-error: true).
   # ──────────────────────────────────────────────────────────────
   test-summary:
     name: "Test Summary"
     runs-on: ubuntu-latest
-    needs: [security-tests, unit-tests, integration-tests]
+    needs: [security-tests, unit-tests, integration-tests, trajectory-structural-tests, trajectory-llm-eval]
     if: always()
 
     steps:
@@ -237,16 +369,18 @@ jobs:
           echo "====================================="
           echo "  TRUTHFORGE AI — TEST SUMMARY"
           echo "====================================="
-          echo "Security Tests : ${{ needs.security-tests.result }}"
-          echo "Unit Tests     : ${{ needs.unit-tests.result }}"
-          echo "Integration    : ${{ needs.integration-tests.result }}"
+          echo "Security Tests        : ${{ needs.security-tests.result }}"
+          echo "Unit Tests            : ${{ needs.unit-tests.result }}"
+          echo "Integration Tests     : ${{ needs.integration-tests.result }}"
+          echo "Trajectory Structural : ${{ needs.trajectory-structural-tests.result }}"
+          echo "Trajectory LLM Eval   : ${{ needs.trajectory-llm-eval.result }} (informational)"
           echo "====================================="
           if [ "${{ needs.security-tests.result }}" != "success" ] || \
              [ "${{ needs.unit-tests.result }}" != "success" ] || \
-             [ "${{ needs.integration-tests.result }}" != "success" ]; then
+             [ "${{ needs.integration-tests.result }}" != "success" ] || \
+             [ "${{ needs.trajectory-structural-tests.result }}" != "success" ]; then
             echo "RESULT: FAILED — do not merge"
             exit 1
           else
             echo "RESULT: ALL PASSED — safe to merge"
           fi
-
