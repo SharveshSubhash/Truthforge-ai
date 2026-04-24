@@ -424,19 +424,20 @@ class TestTrajectoryUnorderedMatch:
 
     def test_missing_explainability_output_fails(self):
         """A run that skips explainability output is incomplete."""
+        # 1. Get the perfect ground-truth reference trajectory
+        reference_outputs = build_standard_trajectory(contradictions=0)
+
+        # 2. Create the test trajectory by copying the reference, 
+        # but completely filtering out the explainability message.
         outputs = [
-            {"role": "user", "content": "Analyse transcript."},
-            {"role": "assistant", "content": json.dumps({"node": "security_input", "status": "SAFE"})},
-            {"role": "assistant", "content": json.dumps({"node": "transcript_processing"})},
-            {"role": "assistant", "content": json.dumps({"node": "timeline_reconstruction"})},
-            {"role": "assistant", "content": json.dumps({"node": "consistency_analysis"})},
-            # explainability MISSING
-            {"role": "assistant", "content": json.dumps({"node": "security_output"})},
+            msg for msg in reference_outputs
+            if "explainability" not in msg.get("content", "")
         ]
 
+        # outputs now has exactly one less message than reference_outputs
         result = unordered_evaluator(
             outputs=outputs,
-            reference_outputs=build_standard_trajectory(contradictions=0),
+            reference_outputs=reference_outputs,
         )
 
         assert result["score"] is False, (
