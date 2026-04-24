@@ -8,7 +8,6 @@ env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/truthforge-ai
   IMAGE_TAG: ${{ github.sha }}
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-
 jobs:
 
   # ──────────────────────────────────────────────────────────────
@@ -16,7 +15,7 @@ jobs:
   # Even though CI already ran, we re-verify before building image
   # ──────────────────────────────────────────────────────────────
   pre-deploy-tests:
-    name: "Pre-Deploy Test Gate (221 tests)"
+    name: "Pre-Deploy Test Gate (229 tests)"
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -34,6 +33,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install agentevals langchain-anthropic langchain-openai langchain-google-genai
 
       - name: Download spaCy model
         run: python -m spacy download en_core_web_sm
@@ -41,7 +41,9 @@ jobs:
       - name: Create required directories
         run: mkdir -p logs artifacts/runs memory reports test-results
 
-      - name: Run ALL 221 tests
+      - name: Run ALL 229 tests
+        # TRUTHFORGE_FALLBACK_MODE=true skips LLM-as-judge trajectory tests (no API cost)
+        # The 8 structural trajectory tests always run
         run: |
           pytest tests/ \
             -v \
