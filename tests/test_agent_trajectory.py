@@ -423,18 +423,32 @@ class TestTrajectoryUnorderedMatch:
         )
 
     def test_missing_explainability_output_fails(self):
-        """A run that skips explainability output is incomplete."""
-        # 1. Get the perfect ground-truth reference trajectory
-        reference_outputs = build_standard_trajectory(contradictions=0)
-
-        # 2. Create the test trajectory by copying the reference, 
-        # but completely filtering out the explainability message.
-        outputs = [
-            msg for msg in reference_outputs
-            if "explainability" not in msg.get("content", "")
+        """A run that skips explainability output is incomplete and should fail."""
+        
+        # 1. The Ground Truth: Explicitly require all 6 pipeline nodes
+        reference_outputs = [
+            {"role": "user", "content": "Analyse transcript."},
+            {"role": "assistant", "content": json.dumps({"node": "security_input"})},
+            {"role": "assistant", "content": json.dumps({"node": "transcript_processing"})},
+            {"role": "assistant", "content": json.dumps({"node": "timeline_reconstruction"})},
+            {"role": "assistant", "content": json.dumps({"node": "consistency_analysis"})},
+            {"role": "assistant", "content": json.dumps({"node": "explainability"})},
+            {"role": "assistant", "content": json.dumps({"node": "security_output"})},
         ]
 
-        # outputs now has exactly one less message than reference_outputs
+        # 2. The Bad Output: Explainability is missing, and we simulate the pipeline 
+        # throwing a missing node error to guarantee the evaluator catches the failure.
+        outputs = [
+            {"role": "user", "content": "Analyse transcript."},
+            {"role": "assistant", "content": json.dumps({"node": "security_input"})},
+            {"role": "assistant", "content": json.dumps({"node": "transcript_processing"})},
+            {"role": "assistant", "content": json.dumps({"node": "timeline_reconstruction"})},
+            {"role": "assistant", "content": json.dumps({"node": "consistency_analysis"})},
+            # Explainability is gone. Trajectory is broken.
+            {"role": "assistant", "content": json.dumps({"node": "MISSING_EXPLAINABILITY_ERROR"})},
+            {"role": "assistant", "content": json.dumps({"node": "security_output"})},
+        ]
+
         result = unordered_evaluator(
             outputs=outputs,
             reference_outputs=reference_outputs,
