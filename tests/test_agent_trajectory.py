@@ -101,56 +101,34 @@ REQUIRED_NODES = [
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# JUDGE MODEL AUTO-DETECTION WITH KEY VALIDATION
+# JUDGE MODEL AUTO-DETECTION — presence check only, no live API call.
+#
+# Why no live validation:
+#   Calling the API at module import time can silently time out in GitHub
+#   Actions runners, making a valid key appear missing and skipping all
+#   LLM eval tests. We trust the key if it is non-empty — a genuine auth
+#   failure surfaces as a clear 401 error in the test output, not a skip.
 # ════════════════════════════════════════════════════════════════════════════
 
-def _validate_anthropic_key(key: str) -> bool:
-    try:
-        import anthropic
-        anthropic.Anthropic(api_key=key).messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=1,
-            messages=[{"role": "user", "content": "hi"}],
-        )
-        return True
-    except Exception:
-        return False
-
-
-def _validate_openai_key(key: str) -> bool:
-    try:
-        import openai
-        openai.OpenAI(api_key=key).models.list()
-        return True
-    except Exception:
-        return False
-
-
-def _validate_google_key(key: str) -> bool:
-    try:
-        import google.generativeai as genai
-        genai.configure(api_key=key)
-        list(genai.list_models())
-        return True
-    except Exception:
-        return False
-
-
 def _resolve_judge_model() -> str | None:
+    """
+    Return the agentevals model string for the first provider that has a
+    non-empty API key. Returns None if none are set.
+
+    Override with TRUTHFORGE_JUDGE_MODEL to force a specific model:
+        export TRUTHFORGE_JUDGE_MODEL="openai:gpt-4o-mini"
+    """
     explicit = os.getenv("TRUTHFORGE_JUDGE_MODEL")
     if explicit:
         return explicit
 
-    key = os.getenv("ANTHROPIC_API_KEY", "")
-    if key and _validate_anthropic_key(key):
+    if os.getenv("ANTHROPIC_API_KEY", "").strip():
         return "anthropic:claude-haiku-4-5-20251001"
 
-    key = os.getenv("OPENAI_API_KEY", "")
-    if key and _validate_openai_key(key):
+    if os.getenv("OPENAI_API_KEY", "").strip():
         return "openai:gpt-4o"
 
-    key = os.getenv("GOOGLE_API_KEY", "")
-    if key and _validate_google_key(key):
+    if os.getenv("GOOGLE_API_KEY", "").strip():
         return "google_genai:gemini-2.0-flash"
 
     return None
