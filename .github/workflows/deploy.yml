@@ -45,6 +45,7 @@ jobs:
         # TRUTHFORGE_FALLBACK_MODE=true skips LLM-as-judge trajectory tests (no API cost)
         # The 8 structural trajectory tests always run
         run: |
+          rm -f .env*
           pytest tests/ \
             -v \
             --tb=short \
