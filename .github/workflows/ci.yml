@@ -8,7 +8,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.11"
-  TRUTHFORGE_FALLBACK_MODE: "true"   # all agents use rule-based logic, no API calls
+  TRUTHFORGE_FALLBACK_MODE: "true"   # all deterministic tests use rule-based logic, no API calls
   PYTHONDONTWRITEBYTECODE: "1"
   PYTHONUNBUFFERED: "1"
 
@@ -329,6 +329,7 @@ jobs:
         # Tests auto-skip if no API key is present (see _resolve_judge_model())
         # TRUTHFORGE_FALLBACK_MODE is NOT set here so LLM tests can run
         run: |
+          rm -f .env*
           pytest tests/test_agent_trajectory.py \
             -v --tb=short \
             -k "TestTrajectoryLLMJudge" \
