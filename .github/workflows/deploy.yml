@@ -15,7 +15,7 @@ jobs:
   # Even though CI already ran, we re-verify before building image
   # ──────────────────────────────────────────────────────────────
   pre-deploy-tests:
-    name: "Pre-Deploy Test Gate (229 tests)"
+    name: "Pre-Deploy Test Gate (237 tests)"
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -41,7 +41,7 @@ jobs:
       - name: Create required directories
         run: mkdir -p logs artifacts/runs memory reports test-results
 
-      - name: Run ALL 229 tests
+      - name: Run ALL 237 tests
         # TRUTHFORGE_FALLBACK_MODE=true skips LLM-as-judge trajectory tests (no API cost)
         # The 8 structural trajectory tests always run
         run: |
