@@ -225,7 +225,7 @@ jobs:
   # These MUST pass before merging — validates LangGraph node sequence.
   # ──────────────────────────────────────────────────────────────
   trajectory-structural-tests:
-    name: "Trajectory Structural Tests (8)"
+    name: "Trajectory Structural Tests (11)"
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: integration-tests       # only runs if integration tests pass
@@ -259,7 +259,7 @@ jobs:
         run: |
           pytest tests/test_agent_trajectory.py \
             -v --tb=short \
-            -k "TestGraphTrajectoryStrictMatch or TestTrajectoryUnorderedMatch" \
+            -k "TestGraphTrajectoryStrictMatch or TestTrajectoryNodeCompleteness" \
             --junitxml=test-results/trajectory-structural.xml
         env:
           TRUTHFORGE_FALLBACK_MODE: "true"
